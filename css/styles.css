@@ -842,19 +842,31 @@ li {
 
 @media screen and (max-width: 768px) {
 
-  .container-fluid {
-    display: flex;
-    align-items: baseline;
-  }
+  
 
   .container-content {
     padding: 5px;
   }
 
   /* HEADER */
-  .navbar-brand{
+
+  .navbar .container-fluid {
+    display: flex;
+    align-items: baseline;
     padding: 0;
   }
+
+  .navbar-nav{
+    padding: 0px 17px;
+  }
+  .navbar-brand{
+    padding-left: 5px;
+  }
+  .navbar-nav .nav-item{
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+  
   #navbarNav li {
     margin-right: 0px;
   }
