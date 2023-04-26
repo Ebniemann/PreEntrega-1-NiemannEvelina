@@ -842,11 +842,18 @@ li {
 
 @media screen and (max-width: 768px) {
 
+  .container-fluid {
+    align-items: baseline;
+  }
+
   .container-content {
     padding: 5px;
   }
 
   /* HEADER */
+  .navbar-brand{
+    padding: 0;
+  }
   #navbarNav li {
     margin-right: 0px;
   }
@@ -856,6 +863,12 @@ li {
     padding: 0px;
     margin: 0px;
     font-weight: 600;
+  }
+
+  .navbar-collapse{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
   }
 
   .message {
