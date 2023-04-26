@@ -843,6 +843,7 @@ li {
 @media screen and (max-width: 768px) {
 
   .container-fluid {
+    display: flex;
     align-items: baseline;
   }
 
