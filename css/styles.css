@@ -1,0 +1,1175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  background-color: black;
+}
+
+
+/* HEADER DESKTOP */
+
+.navbar {
+  padding: 0px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background-color: black;
+}
+
+.navbar-brand {
+  padding: 20px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+  font-family: 'Titan One', cursive;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+
+#navbarNav ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbarNav li {
+  margin-right: 20px;
+}
+
+#navbarNav a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbarNav a:active {
+  color: yellow;
+}
+
+.container-content {
+  padding: 0px 10px;
+}
+
+/* Presentacion */
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.message {
+  grid-column: 1/17;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.title {
+  margin-left: 75px;
+}
+
+h1 {
+  font-size: 75px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.message .title p {
+  font-size: 25px;
+  line-height: 1.15;
+  margin-bottom: 35px;
+}
+
+.message .title p:last-child {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.message a {
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  width: 30%;
+  font-family: 'PT Sans', sans-serif;
+  justify-content: center;
+}
+
+.message img {
+  width: 600px;
+  height: 550px;
+  border-radius: 5px;
+}
+
+/* Testimonios */
+
+.carousel {
+  grid-column: 2/16;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-text {
+  width: 40%;
+}
+
+.carousel-text h2 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.carousel-text h3 {
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 45px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.carousel-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+#carouselExampleIndicators {
+  width: 45%;
+  height: 310px;
+  color: black;
+  border-radius: 5px;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  background: white;
+}
+
+#carouselExampleIndicators button {
+  background-color: yellow;
+  width: 64px;
+  height: 8px;
+  border-top: 0;
+  border-bottom: 0px;
+  border-radius: 4px;
+}
+
+.carousel-indicators {
+  background-color: black;
+  bottom: -35px;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+.item {
+  padding: 25px 20px 5px;
+}
+
+.slide p:first-child {
+  min-height: 135px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.slide p:last-child {
+  font-size: 20px;
+  text-align: end;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.person img {
+  width: 65px;
+  height: 65px;
+  margin-right: 25px;
+}
+
+.slide .person p {
+  color: black;
+  font-weight: 100;
+}
+
+
+/* Por qué */
+
+.why {
+  position: relative;
+  grid-column: 1/17;
+  display: flex;
+  padding: 40px 0px 0px;
+  height: 600px;
+  background: white;
+}
+
+.img-why img {
+  height: 500px;
+  width: 550px;
+  margin-right: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.text-why-title {
+  position: relative;
+  width: 21%;
+}
+
+.text-why h3 {
+  position: relative;
+  font-size: 25px;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.subrayado-why {
+  position: absolute;
+  bottom: -4px;
+  height: 16px;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(255, 255, 1);
+  margin: auto;
+
+}
+
+.text-why h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+  color: black;
+
+}
+
+.reasons-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons {
+  width: 400px;
+  padding: 0px 20px;
+  margin-bottom: 40px;
+}
+
+.reasons h4 {
+  font-weight: 600;
+  color: #000000DE;
+  border-left: 3px solid black;
+  padding: 0px 0px 0px 10px;
+}
+
+/* Cards de carreras */
+
+.wrapper-home-career {
+  grid-column: 2/16;
+  margin-bottom: 100px;
+}
+
+.home-career {
+  display: flex;
+  gap: 25px;
+}
+
+.wrapper-home-career h2 {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+.home-career .career {
+  height: 470px;
+  padding: 10px;
+  width: 33%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 44 50/var(--tw-bg-opacity));
+  box-shadow: 0px 2px 10px gray;
+  border-radius: 4px;
+  color: white;
+}
+
+.careers h2 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.career h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.career h3 {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.career ul {
+  min-height: 135px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.career li {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.time img {
+  margin-right: 10px;
+  width: 14;
+  height: 14;
+}
+
+.time p {
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.line {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.price p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.price span {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.price a {
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  padding: 10px;
+  background-color: rgb(255, 255, 1);
+  border-color: rgb(255, 255, 1);
+  color: rgb(46, 46, 46);
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+/* Modalidad */
+
+
+.modality {
+  grid-column: 1/17;
+  position: relative;
+  height: 600px;
+  padding: 75px 0px 0px;
+  color: black;
+  background: white;
+  background-image: url(https://assets.soyhenry.com/henry-landing/assets/shapes/shapesHowApply.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.times {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modality h2 {
+  color: black;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subrayado {
+  height: 16px;
+  position: absolute;
+  top: 135px;
+  right: 415px;
+  z-index: 1;
+  width: 580px;
+  background-color: rgb(255, 255, 1);
+  margin: auto;
+}
+
+.modality p {
+  font-family: 'PT Sans', sans-serif;
+  position: relative;
+  margin-bottom: 75px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.modality-time {
+  flex-direction: column;
+  width: 35%;
+  padding: 0px 12px;
+  border-radius: 5px;
+}
+
+.modality-time h4 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.modality-time p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+
+
+/* Footer */
+
+footer {
+  grid-column: 1/13;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  font-family: 'PT Sans', sans-serif;
+}
+
+footer a {
+  padding: 20px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+  font-family: 'Titan One', cursive;
+}
+
+footer ul {
+  list-style: none;
+  font-family: Roboto;
+  text-align: center;
+  display: flex;
+
+}
+
+footer li {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* PAGE  CARRERAS */
+
+.why-carreras {
+  grid-column: 1/17;
+}
+
+.why-carrera {
+  position: relative;
+  display: flex;
+  padding: 40px 0px 0px;
+  height: 600px;
+  background: white;
+}
+
+.why-carrera img:last-child {
+  margin-right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.why-carreras .text-why {
+  margin: 0px 30px;
+}
+
+.img-carreras {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.our-careers {
+  grid-column: 1/17;
+  margin-top: 50px;
+}
+
+.our-careers .careers-wrapper:first-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.our-careers .careers-wrapper:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.careers-wrapper {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.our-careers .icon {
+  margin: 0px auto;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.our-careers .icon:hover {
+  transform: scale(1.2);
+}
+
+.careers {
+  width: 65%;
+  color: white;
+}
+
+.careers h2 {
+  font-size: 45px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.career-wrapper {
+  display: flex;
+}
+
+.career-wrapper .career {
+  width: 50%;
+  margin-right: 25px;
+  padding: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 44 50/var(--tw-bg-opacity));
+  box-shadow: 0px 2px 10px gray;
+  border-radius: 4px;
+}
+
+.career h2 {
+  font-size: 29px;
+  margin-bottom: 20px;
+}
+
+.modality .carreras-times {
+  flex-direction: column;
+  padding: 0px 130px;
+}
+
+.modality-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modality-date p {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.date {
+  position: relative;
+}
+
+.highlight {
+  position: absolute;
+  height: 25px;
+  width: 180px;
+  background-color: yellow;
+}
+
+.separator {
+  height: 1px;
+  background-color: gray;
+  margin: 25px 0px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* PAGE EMPRESAS */
+
+/* .message-companies{
+  min-height: 600px;
+  padding: 0px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+} */
+
+.title-empresas {
+  grid-column: 2/16;
+
+  color: white;
+  text-align: center;
+  margin: 80px 0px;
+}
+
+.plans {
+  grid-column: 2/16;
+
+  display: flex;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.plan {
+  padding: 15px;
+  width: 33%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 44 50/var(--tw-bg-opacity));
+  box-shadow: 0px 2px 10px gray;
+  border-radius: 4px;
+  color: white;
+}
+
+.plan h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.plan ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.plan p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.benefit {
+  display: flex;
+  align-items: baseline;
+}
+
+.benefit img {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+li {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.options {
+  grid-column: 4/14;
+  color: white;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.options p {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.option img {
+  margin-right: 10px;
+  width: 40px;
+}
+
+.options .option p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* PAGE PLAN DE PAGO */
+
+.title-plan-de-pago {
+  grid-column: 2/16;
+
+  color: white;
+  text-align: center;
+  margin: 80px 0px;
+}
+
+.price-plan-de-pago {
+  margin-bottom: 35px;
+}
+
+.price-plan-de-pago p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.price-plan-de-pago span {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.plan-title {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.plan-title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.plan-title h2 {
+  margin-bottom: 0;
+}
+
+.plan button {
+  border: 1px solid yellow;
+  background: transparent;
+  color: yellow;
+  padding: 20px 5px;
+  border-radius: 10px;
+  width: 85%;
+  margin: 0px auto;
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  font-size: 15px;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* PAGE FAQS */
+
+.accordion{
+  grid-column: 3/15;
+  margin-bottom: 50px;
+}
+
+.accordion h1{
+  color: white;
+}
+
+
+.contact {
+  grid-column: 3/15;
+  color: white;
+}
+
+.contact h2{
+  font-size: 35px;
+  font-family: 'PT Sans', sans-serif;
+}
+.contact input[type="submit"]{
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  width: 30%;
+  font-family: 'PT Sans', sans-serif;
+  justify-content: center;
+
+}
+
+
+/* /---------------------------------------------------------- */
+
+/* MOBILE PAGE HOME */
+
+@media screen and (max-width: 768px) {
+
+  .container-content {
+    padding: 5px;
+  }
+
+  /* HEADER */
+  #navbarNav li {
+    margin-right: 0px;
+  }
+
+  #navbarNav a {
+    text-align: end;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+  }
+
+  .message {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 65px;
+    min-height: 0px;
+    padding: 0px;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 35px;
+    color: yellow;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .message-title p {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+
+  .message-title p:last-child {
+    font-size: 14px;
+  }
+
+  .message a {
+    width: 50%;
+  }
+
+  .message img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+
+  /* carousel */
+
+  .carousel {
+    grid-column: 1/17;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 65px;
+    background-image: url(https://assets.soyhenry.com/henry-landing/assets/shapes/shapesHowApply.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: -159px;
+  }
+
+  .carousel-text {
+    width: 100%;
+  }
+
+  .carousel-text h2 {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .carousel-text h3 {
+    font-size: 35px;
+  }
+
+  #carouselExampleIndicators {
+    width: 100%;
+    height: 275px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .carousel-item .item p {
+    font-size: 15px;
+  }
+
+  .person img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+
+  .slide .person p {
+    margin-bottom: 0px;
+    font-size: 17px;
+  }
+
+  /* why */
+
+  .why {
+    padding: 0;
+    margin-bottom: 20px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .img-why img {
+    width: 100%;
+    height: 250px;
+    border-radius: 0px;
+  }
+
+  .text-why {
+    text-align: center;
+  }
+
+  .text-why h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .subrayado-why {
+    top: 270px;
+    left: 70px;
+  }
+
+
+  /* Cards de carreras */
+
+  .wrapper-home-career {
+    grid-column: 1/17;
+    margin-bottom: 30px;
+  }
+
+  .wrapper-home-career h2 {
+    font-size: 35px;
+    text-align: left;
+  }
+
+  .home-career {
+    flex-direction: column;
+    padding: 0px 5px;
+  }
+
+  .home-career .career {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  .career h2 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: yellow;
+    font-weight: 600;
+  }
+
+  .career ul {
+    min-height: 100px;
+  }
+
+  .career li {
+    line-height: 20px;
+  }
+
+  .time p {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .line {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    grid-column: 1/17;
+    font-size: 35px;
+    text-align: center;
+  }
+
+
+  /* Modality */
+
+  .modality{
+    height: auto;
+    padding: 0px 10px;
+    background-position-x: 177px;
+    background-position-y: 181px;
+    background-repeat: repeat-y;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 0px;
+    margin-bottom: 10px;
+  }
+
+  .modality p {
+    font-size: 35px;
+    margin-bottom: 30px;
+    line-height: 35px;
+    color: black;
+  }
+
+  .modality .subrayado {
+    top: 130px;
+    right: 20px;
+    width: 330px;
+  }
+  .times .modality-time p{
+    line-height: 25px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .modality .times {
+    flex-direction: column;
+  }
+
+  .modality-time {
+    width: 100%;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  footer a {
+    padding: 0px;
+    font-size: 30px;
+  }
+
+  footer ul {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+   /* PAGE  CARRERAS */ 
+
+   .why-carrera{
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+
+   }
+   .why-carrera img{
+    width: 100%;
+    height: auto;
+   }
+
+   .why-carreras .text-why{
+    margin: 0;
+    width: 100%;
+    text-align: left;
+   }
+
+   .text-why-title{
+    width: 75%;
+    margin: 0px auto;
+  }
+
+  .text-why h3{
+    font-size: 35px;
+  }
+  .subrayado-why{
+    top: 16px;
+    left: 0px;
+  }
+  .our-careers{
+    padding: 0px 10px;
+  }
+  .careers-wrapper{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .career-wrapper{
+    flex-direction: column;
+  }
+  .careers{
+    width: 100%;
+    margin-top: 25px;
+  }
+  .career-wrapper .career{
+    width: 100%;
+    margin: 0px 0px 30px;
+  }
+
+ 
+  .modality h2{
+    color: white;
+  }
+ 
+  .modality .subrayado{
+    top: 24px;
+    height: 36px;
+  }
+
+  .modality .carreras-times{
+    flex-direction: column;
+    padding: 0;
+    
+  }
+  .modality-date{
+    flex-direction: column;
+    
+  }
+  .modality-date .date span{
+    color: black;
+  }
+  .modality-date p{
+    color: white;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .separator{
+    height: 0;
+  }
+}
+
