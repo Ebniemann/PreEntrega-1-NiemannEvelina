@@ -1,0 +1,255 @@
+.why-carreras {
+  grid-column: 1/17;
+
+  .why-carrera {
+    position: relative;
+    display: flex;
+    padding: 40px 0px 0px;
+    height: 600px;
+    background: white;
+
+    .image {
+      img {
+        height: 500px;
+        width: 550px;
+
+        &:last-child {
+          margin-right: 0px;
+          border-radius: 10px 0px 0px 10px;
+        }
+      }
+    }
+
+    .text-why {
+
+      .text-why-title {
+        position: relative;
+        width: 21%;
+
+        h3 {
+          position: relative;
+          font-size: 25px;
+          z-index: 2;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+
+        .subrayado-why {
+          position: absolute;
+          bottom: -4px;
+          height: 16px;
+          z-index: 1;
+          width: 100%;
+          background-color: rgb(255, 255, 1);
+          margin: auto;
+        }
+      }
+
+      .reasons-item {
+        display: flex;
+        flex-wrap: wrap;
+
+        .reasons {
+          width: 400px;
+          padding: 0px 20px;
+          margin-bottom: 40px;
+
+          h4 {
+            font-weight: 600;
+            color: #000000DE;
+            border-left: 3px solid black;
+            padding: 0px 0px 0px 10px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.our-careers {
+  grid-column: 1/17;
+  margin-top: 50px;
+
+  &:first-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .careers-wrapper {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin: 0px auto;
+      transition: 0.5s;
+      object-fit: cover;
+    }
+
+    .careers {
+      width: 65%;
+      color: white;
+
+      h2 {
+        font-size: 45px;
+        color: white;
+        margin-bottom: 30px;
+      }
+    }
+
+    .career-wrapper {
+      display: flex;
+
+      .career {
+        width: 50%;
+        margin-right: 25px;
+        padding: 10px;
+        box-shadow: 0px 2px 10px gray;
+        border-radius: 4px;
+        --tw-bg-opacity: 1;
+        background-color: map-get($map: $color, $key: gris );
+
+        h2 {
+          font-size: 29px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+.modality {
+
+  .carreras-times {
+    flex-direction: column;
+    padding: 0px 130px;
+
+    .modality-date {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: left;
+      }
+
+      .date {
+        position: relative;
+      }
+
+      .highlight {
+        position: absolute;
+        height: 25px;
+        width: 180px;
+        background-color: yellow;
+      }
+    }
+
+    .separator {
+      height: 1px;
+      background-color: gray;
+      margin: 25px 0px;
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .why-carreras{
+
+    .why-carrera{
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+
+      .image{
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .text-why{
+        margin: 0;
+        width: 100%;
+        text-align: left;   
+        
+        .text-why-title{
+          width: 75%;
+          margin: 0px auto;
+
+          h3{
+            font-size: 35px;
+          }
+          .subrayado-why{
+            top: 16px;
+            left: 0px;
+          }
+        }
+      }
+  
+    }
+  }
+
+  .our-careers{
+    padding: 0px 10px;
+
+    .careers-wrapper{
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      .career-wrapper{
+        flex-direction: column;
+        .career{
+          width: 100%;
+          margin: 0px 0px 30px;
+        }
+      }
+      .careers{
+        width: 100%;
+        margin-top: 25px;
+      }
+    
+    }
+  }
+  .modality{
+    h2{
+      color: white;
+    }
+    .subrayado{
+      top: 24px;
+    height: 36px;
+    }
+    .carreras-times{
+      flex-direction: column;
+      padding: 0;
+      .modality-date{
+        flex-direction: column;
+        p{
+          color: white;
+          font-size: 20px;
+          line-height: 25px;
+        }
+        .date{
+          span{
+            color: black;
+          }
+        }
+      }  
+      .separator{
+        height: 0;
+      }
+    }
+  }
+
+}

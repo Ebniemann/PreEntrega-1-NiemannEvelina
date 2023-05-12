@@ -1,0 +1,32 @@
+footer{
+  grid-column: 1/13;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  font-family: $font-sans;
+
+  a{
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    font-family: $font-titan;
+  }
+  
+  ul{
+    list-style: none;
+    font-family: Roboto;
+    text-align: center;
+    display: flex;
+
+    li{
+      font-size: 25px;
+      margin-right: 20px;
+    }
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
