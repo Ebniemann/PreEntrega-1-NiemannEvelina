@@ -1,789 +1,751 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Titan+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 * {
-  margin: 0;
+  box-sizing: border-box;
   padding: 0;
-}
+  margin: 0; }
+
+.navbar {
+  padding: 0;
+  font-family: "PT Sans", sans-serif; }
+  .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: black; }
+    .navbar .container-fluid .navbar-brand {
+      padding: 20px;
+      color: white;
+      font-size: 35px;
+      text-decoration: none;
+      font-family: "Titan One", cursive; }
+    .navbar .container-fluid #navbarNav {
+      justify-content: flex-end; }
+      .navbar .container-fluid #navbarNav ul {
+        display: flex;
+        list-style: none; }
+        .navbar .container-fluid #navbarNav ul li {
+          margin-right: 20px; }
+          .navbar .container-fluid #navbarNav ul li a {
+            color: white;
+            text-decoration: none; }
+            .navbar .container-fluid #navbarNav ul li a:active {
+              color: yellow; }
+    @media screen and (max-width: 768px) {
+      .navbar .container-fluid #navbarNav ul li {
+        margin-right: 0px; }
+        .navbar .container-fluid #navbarNav ul li a {
+          text-align: end;
+          padding: 0px;
+          margin: 0px;
+          font-weight: 600; } }
 
 body {
   font-family: Roboto;
-  background-color: black;
-}
-
-
-/* HEADER DESKTOP */
-
-.navbar {
-  padding: 0px;
-  font-family: 'PT Sans', sans-serif;
-}
-
-.container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  background-color: black;
-}
-
-.navbar-brand {
-  padding: 20px;
-  color: white;
-  font-size: 35px;
-  text-decoration: none;
-  font-family: 'Titan One', cursive;
-}
-
-#navbarNav {
-  justify-content: flex-end;
-}
-
-#navbarNav ul {
-  display: flex;
-  list-style: none;
-}
-
-#navbarNav li {
-  margin-right: 20px;
-}
-
-#navbarNav a {
-  color: white;
-  text-decoration: none;
-}
-
-#navbarNav a:active {
-  color: yellow;
-}
-
-.container-content {
-  padding: 0px 10px;
-}
-
-/* Presentacion */
-
-
-main {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-}
-
-.message {
-  grid-column: 1/17;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.title {
-  margin-left: 75px;
-}
-
-h1 {
-  font-size: 75px;
-  margin-bottom: 35px;
-  font-weight: 600;
-  font-family: 'PT Sans', sans-serif;
-}
-
-.message .title p {
-  font-size: 25px;
-  line-height: 1.15;
-  margin-bottom: 35px;
-}
-
-.message .title p:last-child {
-  font-size: 18px;
-  margin-bottom: 100px;
-}
-
-.message a {
-  border-radius: 5px;
-  text-decoration: none;
-  border: 1px solid yellow;
-  background-color: yellow;
-  color: black;
-  padding: 15px;
-  font-size: 20px;
-  display: flex;
-  width: 30%;
-  font-family: 'PT Sans', sans-serif;
-  justify-content: center;
-}
-
-.message img {
-  width: 600px;
-  height: 550px;
-  border-radius: 5px;
-}
-
-/* Testimonios */
-
-.carousel {
-  grid-column: 2/16;
-  height: 600px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.carousel-text {
-  width: 40%;
-}
-
-.carousel-text h2 {
-  font-size: 15px;
-  letter-spacing: 2px;
-  color: white;
-  margin-bottom: 20px;
-}
-
-.carousel-text h3 {
-  font-size: 48px;
-  color: white;
-  font-weight: 600;
-  margin-bottom: 45px;
-  font-family: 'PT Sans', sans-serif;
-}
-
-.carousel-text p {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  color: white;
-}
-
-#carouselExampleIndicators {
-  width: 45%;
-  height: 310px;
-  color: black;
-  border-radius: 5px;
-  margin-top: 35px;
-  margin-bottom: 40px;
-  background: white;
-}
-
-#carouselExampleIndicators button {
-  background-color: yellow;
-  width: 64px;
-  height: 8px;
-  border-top: 0;
-  border-bottom: 0px;
-  border-radius: 4px;
-}
-
-.carousel-indicators {
-  background-color: black;
-  bottom: -35px;
-  margin-bottom: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.carousel-inner {
-  border-radius: 10px;
-}
-
-.item {
-  padding: 25px 20px 5px;
-}
-
-.slide p:first-child {
-  min-height: 135px;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.slide p:last-child {
-  font-size: 20px;
-  text-align: end;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-  color: black;
-}
-
-.person {
-  display: flex;
-  align-items: center;
-}
-
-.person img {
-  width: 65px;
-  height: 65px;
-  margin-right: 25px;
-}
-
-.slide .person p {
-  color: black;
-  font-weight: 100;
-}
-
-
-/* Por qué */
-
-.why {
-  position: relative;
-  grid-column: 1/17;
-  display: flex;
-  padding: 40px 0px 0px;
-  height: 600px;
-  background: white;
-}
-
-.img-why img {
-  height: 500px;
-  width: 550px;
-  margin-right: 20px;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.text-why-title {
-  position: relative;
-  width: 21%;
-}
-
-.text-why h3 {
-  position: relative;
-  font-size: 25px;
-  z-index: 2;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.subrayado-why {
-  position: absolute;
-  bottom: -4px;
-  height: 16px;
-  z-index: 1;
-  width: 100%;
-  background-color: rgb(255, 255, 1);
-  margin: auto;
-
-}
-
-.text-why h2 {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 45px;
-  letter-spacing: 2px;
-  color: black;
-
-}
-
-.reasons-item {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.reasons {
-  width: 400px;
-  padding: 0px 20px;
-  margin-bottom: 40px;
-}
-
-.reasons h4 {
-  font-weight: 600;
-  color: #000000DE;
-  border-left: 3px solid black;
-  padding: 0px 0px 0px 10px;
-}
-
-/* Cards de carreras */
-
-.wrapper-home-career {
-  grid-column: 2/16;
-  margin-bottom: 100px;
-}
-
-.home-career {
-  display: flex;
-  gap: 25px;
-}
-
-.wrapper-home-career h2 {
-  font-family: 'PT Sans', sans-serif;
-  color: white;
-  font-size: 65px;
-  margin-bottom: 30px;
-}
-
-.home-career .career {
-  height: 470px;
-  padding: 10px;
-  width: 33%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 44 50/var(--tw-bg-opacity));
-  box-shadow: 0px 2px 10px gray;
-  border-radius: 4px;
-  color: white;
-}
-
-.careers h2 {
-  font-family: 'PT Sans', sans-serif;
-}
-
-.career h2 {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.career h3 {
-  font-size: 12px;
-  margin-bottom: 15px;
-}
-
-.career ul {
-  min-height: 135px;
-  list-style: none;
-  margin-bottom: 15px;
-}
-
-.career li {
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-
-.time {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.time img {
-  margin-right: 10px;
-  width: 14;
-  height: 14;
-}
-
-.time p {
-  font-size: 15px;
-  margin-bottom: 0px;
-}
-
-.line {
-  border: 1px solid black;
-  margin-bottom: 25px;
-}
-
-.price p {
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-
-.price span {
-  font-size: 35px;
-  font-weight: 600;
-}
-
-.price a {
-  text-decoration: none;
-  font-family: 'PT Sans', sans-serif;
-  padding: 10px;
-  background-color: rgb(255, 255, 1);
-  border-color: rgb(255, 255, 1);
-  color: rgb(46, 46, 46);
-  border-radius: 8px;
-  border-style: solid;
-  border-width: 2px;
-  cursor: pointer;
-  outline: none;
-}
-
-
-/* Modalidad */
-
-
-.modality {
-  grid-column: 1/17;
-  position: relative;
-  height: 600px;
-  padding: 75px 0px 0px;
-  color: black;
-  background: white;
-  background-image: url(https://assets.soyhenry.com/henry-landing/assets/shapes/shapesHowApply.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.times {
-  display: flex;
-  justify-content: space-around;
-}
-
-.modality h2 {
-  color: black;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.subrayado {
-  height: 16px;
-  position: absolute;
-  top: 135px;
-  right: 415px;
-  z-index: 1;
-  width: 580px;
-  background-color: rgb(255, 255, 1);
-  margin: auto;
-}
-
-.modality p {
-  font-family: 'PT Sans', sans-serif;
-  position: relative;
-  margin-bottom: 75px;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  z-index: 2;
-}
-
-.modality-time {
-  flex-direction: column;
-  width: 35%;
-  padding: 0px 12px;
-  border-radius: 5px;
-}
-
-.modality-time h4 {
-  font-weight: 600;
-  text-align: center;
-}
-
-.modality-time p {
-  font-family: Roboto;
-  font-weight: 100;
-  font-size: 15px;
-  font-weight: 100;
-  letter-spacing: 0;
-  margin-bottom: 0;
-}
-
-
-/* Footer */
-
-footer {
-  grid-column: 1/13;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-evenly;
-  font-family: 'PT Sans', sans-serif;
-}
-
-footer a {
-  padding: 20px;
-  color: white;
-  font-size: 35px;
-  text-decoration: none;
-  font-family: 'Titan One', cursive;
-}
-
-footer ul {
-  list-style: none;
-  font-family: Roboto;
-  text-align: center;
-  display: flex;
-
-}
-
-footer li {
-  font-size: 25px;
-  margin-right: 20px;
-}
-
-footer img {
-  width: 30px;
-  height: 30px;
-}
-
-/* ---------------------------------------------------------------------------------------------------- */
-
-/* PAGE  CARRERAS */
+  background-color: black; }
+  body main {
+    padding: 0px 10px; }
+    body main .container-content {
+      display: grid;
+      grid-template-columns: repeat(16, 1fr); }
+      body main .container-content .message {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1/17;
+        color: white;
+        margin-bottom: 100px; }
+        body main .container-content .message .title {
+          margin-left: 75px; }
+          body main .container-content .message .title h1 {
+            font-size: 75px;
+            margin-bottom: 35px;
+            font-weight: 600;
+            font-family: "PT Sans", sans-serif; }
+          body main .container-content .message .title p {
+            font-size: 25px;
+            line-height: 1.15;
+            margin-bottom: 35px; }
+            body main .container-content .message .title p:last-child {
+              font-size: 18px;
+              margin-bottom: 100px; }
+          body main .container-content .message .title a {
+            border-radius: 5px;
+            text-decoration: none;
+            border: 1px solid yellow;
+            background-color: yellow;
+            color: black;
+            padding: 15px;
+            font-size: 20px;
+            display: flex;
+            width: 30%;
+            font-family: "PT Sans", sans-serif;
+            justify-content: center; }
+        body main .container-content .message img {
+          width: 600px;
+          height: 550px;
+          border-radius: 5px; }
+      body main .container-content .carousel {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 2/16;
+        height: 600px; }
+        body main .container-content .carousel .carousel-text {
+          width: 40%; }
+          body main .container-content .carousel .carousel-text h2 {
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: white;
+            margin-bottom: 20px; }
+          body main .container-content .carousel .carousel-text h3 {
+            font-size: 48px;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 45px;
+            font-family: "PT Sans", sans-serif; }
+          body main .container-content .carousel .carousel-text p {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            color: white; }
+        body main .container-content .carousel #carouselExampleIndicators {
+          width: 45%;
+          height: 310px;
+          color: black;
+          border-radius: 5px;
+          margin-top: 35px;
+          margin-bottom: 40px;
+          background: white; }
+          body main .container-content .carousel #carouselExampleIndicators .carousel-indicators {
+            background-color: black;
+            bottom: -35px;
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-left: 0; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-indicators button {
+              background-color: yellow;
+              width: 64px;
+              height: 8px;
+              border-top: 0;
+              border-bottom: 0px;
+              border-radius: 4px; }
+          body main .container-content .carousel #carouselExampleIndicators .carousel-inner {
+            border-radius: 10px; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item {
+              padding: 25px 20px 5px; }
+              body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person {
+                display: flex;
+                align-items: center; }
+                body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person img {
+                  width: 65px;
+                  height: 65px;
+                  margin-right: 25px; }
+                body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person p {
+                  color: black;
+                  font-weight: 100; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-inner .slide p:first-child {
+              min-height: 135px;
+              font-size: 18px;
+              margin-bottom: 5px; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-inner .slide p:last-child {
+              font-size: 20px;
+              text-align: end;
+              font-weight: 600;
+              letter-spacing: 2px;
+              margin-bottom: 0;
+              color: black; }
+      body main .container-content .why {
+        position: relative;
+        grid-column: 1/17;
+        display: flex;
+        padding: 40px 0px 0px;
+        height: 600px;
+        background: white; }
+        body main .container-content .why .img-why img {
+          height: 500px;
+          width: 550px;
+          margin-right: 8px;
+          border-radius: 0px 10px 10px 0px; }
+        body main .container-content .why .text-why .text-why-title {
+          position: relative;
+          width: 25%; }
+          body main .container-content .why .text-why .text-why-title h3 {
+            position: relative;
+            font-size: 25px;
+            z-index: 2;
+            text-align: center;
+            margin-bottom: 25px; }
+          body main .container-content .why .text-why .text-why-title .subrayado-why {
+            position: absolute;
+            bottom: -4px;
+            height: 16px;
+            z-index: 1;
+            width: 100%;
+            background-color: yellow;
+            margin: auto; }
+        body main .container-content .why .text-why h2 {
+          font-family: "PT Sans", sans-serif;
+          font-size: 40px;
+          font-weight: 600;
+          margin-bottom: 45px;
+          letter-spacing: 2px;
+          color: black; }
+        body main .container-content .why .text-why .reasons-item {
+          display: flex;
+          flex-wrap: wrap; }
+          body main .container-content .why .text-why .reasons-item .reasons {
+            width: 400px;
+            padding: 0px 20px;
+            margin-bottom: 40px; }
+            body main .container-content .why .text-why .reasons-item .reasons h4 {
+              font-weight: 600;
+              color: #000000DE;
+              border-left: 3px solid black;
+              padding: 0px 0px 0px 10px; }
+      body main .container-content .wrapper-home-career {
+        grid-column: 2/16;
+        margin-bottom: 100px; }
+        body main .container-content .wrapper-home-career h2 {
+          font-family: "PT Sans", sans-serif;
+          color: white;
+          font-size: 65px;
+          margin-bottom: 30px; }
+        body main .container-content .wrapper-home-career .home-career {
+          display: flex;
+          gap: 25px; }
+          body main .container-content .wrapper-home-career .home-career .career {
+            height: 470px;
+            padding: 10px;
+            width: 33%;
+            --tw-bg-opacity: 1;
+            background-color: #2B2C32;
+            box-shadow: 0px 2px 10px gray;
+            border-radius: 4px;
+            color: white; }
+            body main .container-content .wrapper-home-career .home-career .career h2 {
+              font-family: "PT Sans", sans-serif;
+              font-size: 30px;
+              margin-bottom: 15px; }
+            body main .container-content .wrapper-home-career .home-career .career h3 {
+              font-size: 12px;
+              margin-bottom: 15px; }
+            body main .container-content .wrapper-home-career .home-career .career ul {
+              min-height: 135px;
+              list-style: none;
+              margin-bottom: 15px; }
+              body main .container-content .wrapper-home-career .home-career .career ul li {
+                font-size: 12px;
+                margin-bottom: 5px; }
+            body main .container-content .wrapper-home-career .home-career .career .time {
+              display: flex;
+              align-items: center;
+              margin-bottom: 25px; }
+              body main .container-content .wrapper-home-career .home-career .career .time img {
+                margin-right: 10px;
+                width: 14;
+                height: 14; }
+              body main .container-content .wrapper-home-career .home-career .career .time p {
+                font-size: 15px;
+                margin-bottom: 0px; }
+            body main .container-content .wrapper-home-career .home-career .career .line {
+              border: 1px solid black;
+              margin-bottom: 25px; }
+            body main .container-content .wrapper-home-career .home-career .career .price p {
+              font-size: 15px;
+              margin-bottom: 20px; }
+            body main .container-content .wrapper-home-career .home-career .career .price span {
+              font-size: 35px;
+              font-weight: 600; }
+            body main .container-content .wrapper-home-career .home-career .career .price a {
+              text-decoration: none;
+              font-family: "PT Sans", sans-serif;
+              padding: 10px;
+              background-color: yellow;
+              border-color: yellow;
+              color: #2e2e2e;
+              border-radius: 8px;
+              border-style: solid;
+              border-width: 2px;
+              cursor: pointer;
+              outline: none; }
+      body main .container-content .modality {
+        grid-column: 1/17;
+        position: relative;
+        padding: 75px 0px;
+        color: black;
+        background: white;
+        background-image: url(https://assets.soyhenry.com/henry-landing/assets/shapes/shapesHowApply.png);
+        background-repeat: no-repeat;
+        background-position: right; }
+        body main .container-content .modality h2 {
+          color: black;
+          font-size: 13px;
+          letter-spacing: 2px;
+          text-align: center;
+          margin-bottom: 5px; }
+        body main .container-content .modality .subrayado {
+          height: 16px;
+          position: absolute;
+          top: 135px;
+          right: 415px;
+          z-index: 1;
+          width: 580px;
+          background-color: yellow;
+          margin: auto; }
+        body main .container-content .modality .times {
+          display: flex;
+          justify-content: space-around; }
+        body main .container-content .modality p {
+          font-family: "PT Sans", sans-serif;
+          position: relative;
+          margin-bottom: 75px;
+          text-align: center;
+          font-size: 45px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          z-index: 2; }
+        body main .container-content .modality .modality-time {
+          flex-direction: column;
+          width: 35%;
+          padding: 0px 12px;
+          border-radius: 5px; }
+          body main .container-content .modality .modality-time h4 {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center; }
+          body main .container-content .modality .modality-time p {
+            font-family: Roboto;
+            font-weight: 100;
+            font-size: 25px;
+            font-weight: 100;
+            letter-spacing: 0;
+            margin-bottom: 0; }
+      body main .container-content .contact {
+        grid-column: 3/15;
+        padding-top: 15px;
+        margin-bottom: 100px; }
+        body main .container-content .contact h2 {
+          font-size: 35px;
+          font-family: "PT Sans", sans-serif;
+          color: white; }
+        body main .container-content .contact input[type="submit"] {
+          border-radius: 5px;
+          text-decoration: none;
+          border: 1px solid yellow;
+          background-color: yellow;
+          color: black;
+          padding: 15px;
+          font-size: 20px;
+          display: flex;
+          width: 30%;
+          font-family: "PT Sans", sans-serif;
+          justify-content: center; }
+      @media screen and (max-width: 768px) {
+        body main .container-content .container-content {
+          padding: 5px; }
+        body main .container-content .message {
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          margin-bottom: 65px;
+          min-height: 0px;
+          padding: 0px; }
+          body main .container-content .message .title {
+            margin: 0; }
+            body main .container-content .message .title h1 {
+              font-size: 35px;
+              color: yellow;
+              font-weight: 600;
+              text-align: center;
+              margin-bottom: 20px; }
+            body main .container-content .message .title p {
+              font-size: 20px;
+              line-height: 27px;
+              margin-bottom: 20px; }
+              body main .container-content .message .title p:last-child {
+                font-size: 14px; }
+            body main .container-content .message .title a {
+              width: 50%; }
+          body main .container-content .message img {
+            width: 100%;
+            height: auto;
+            margin: 0px; }
+        body main .container-content .carousel {
+          grid-column: 1/17;
+          height: auto;
+          flex-direction: column;
+          margin-bottom: 65px;
+          background-image: url(https://assets.soyhenry.com/henry-landing/assets/shapes/shapesHowApply.png);
+          background-repeat: no-repeat;
+          background-position: right;
+          background-position-y: -159px; }
+          body main .container-content .carousel .carousel-text {
+            width: 100%; }
+            body main .container-content .carousel .carousel-text h2 {
+              font-size: 15px;
+              text-align: left; }
+            body main .container-content .carousel .carousel-text h3 {
+              font-size: 35px; }
+          body main .container-content .carousel #carouselExampleIndicators {
+            width: 100%;
+            height: 275px;
+            margin-bottom: 0;
+            margin-top: 0; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person p {
+              font-size: 15px; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person img {
+              width: 50px;
+              height: auto;
+              margin-right: 15px; }
+            body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .slide p {
+              margin-bottom: 0px;
+              font-size: 17px; }
+        body main .container-content .why {
+          padding: 0;
+          margin-bottom: 20px;
+          height: auto;
+          flex-direction: column; }
+          body main .container-content .why .img-why img {
+            width: 100%;
+            height: 250px;
+            border-radius: 0px; }
+          body main .container-content .why .text-why {
+            text-align: center; }
+            body main .container-content .why .text-why h2 {
+              font-size: 35px;
+              margin-bottom: 20px; }
+            body main .container-content .why .text-why .text-why-title {
+              width: 100%; }
+              body main .container-content .why .text-why .text-why-title .subrayado-why {
+                left: 15px;
+                width: 90%; }
+        body main .container-content .wrapper-home-career {
+          grid-column: 1/17;
+          margin-bottom: 30px; }
+          body main .container-content .wrapper-home-career h2 {
+            font-size: 35px;
+            text-align: left; }
+          body main .container-content .wrapper-home-career .home-career {
+            flex-direction: column;
+            padding: 0px 5px; }
+            body main .container-content .wrapper-home-career .home-career .career {
+              width: 100%;
+              height: 400px;
+              border-radius: 10px; }
+              body main .container-content .wrapper-home-career .home-career .career h2 {
+                text-align: left;
+                font-size: 20px;
+                margin-bottom: 15px;
+                color: yellow;
+                font-weight: 600; }
+              body main .container-content .wrapper-home-career .home-career .career ul {
+                min-height: 100px; }
+                body main .container-content .wrapper-home-career .home-career .career ul li {
+                  line-height: 20px; }
+              body main .container-content .wrapper-home-career .home-career .career .time p {
+                font-size: 12px;
+                margin-bottom: 0px; }
+              body main .container-content .wrapper-home-career .home-career .career .line {
+                margin-bottom: 15px; }
+        body main .container-content .modality {
+          height: auto;
+          padding: 0px 10px;
+          background-position-x: 177px;
+          background-position-y: 181px;
+          background-repeat: repeat-y;
+          background-color: black;
+          color: white;
+          box-shadow: 0px 0px 0px;
+          margin-bottom: 10px; }
+          body main .container-content .modality h2 {
+            color: white; }
+          body main .container-content .modality p {
+            font-size: 35px;
+            margin-bottom: 30px;
+            line-height: 35px;
+            color: black; }
+          body main .container-content .modality .subrayado {
+            top: 20px;
+            right: 15px;
+            height: 43px;
+            width: 330px; }
+          body main .container-content .modality .times {
+            flex-direction: column; }
+            body main .container-content .modality .times .modality-time {
+              width: 100%;
+              margin-bottom: 15px; }
+              body main .container-content .modality .times .modality-time p {
+                line-height: 25px;
+                color: white;
+                font-size: 18px; }
+        body main .container-content .contact input[type="submit"] {
+          width: 45%; } }
 
 .why-carreras {
-  grid-column: 1/17;
-}
-
-.why-carrera {
-  position: relative;
-  display: flex;
-  padding: 40px 0px 0px;
-  height: 600px;
-  background: white;
-}
-
-.why-carrera img:last-child {
-  margin-right: 0px;
-  border-radius: 10px 0px 0px 10px;
-}
-
-.why-carreras .text-why {
-  margin: 0px 30px;
-}
-
-.img-carreras {
-  border-radius: 0px 10px 10px 0px;
-}
+  grid-column: 1/17; }
+  .why-carreras .why-carrera {
+    position: relative;
+    display: flex;
+    padding: 40px 0px 0px;
+    height: 600px;
+    background: white; }
+    .why-carreras .why-carrera .image img {
+      height: 500px;
+      width: 550px; }
+      .why-carreras .why-carrera .image img:last-child {
+        margin-right: 0px;
+        border-radius: 10px 0px 0px 10px; }
+    .why-carreras .why-carrera .text-why .text-why-title {
+      position: relative;
+      width: 21%; }
+      .why-carreras .why-carrera .text-why .text-why-title h3 {
+        position: relative;
+        font-size: 25px;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: 25px; }
+      .why-carreras .why-carrera .text-why .text-why-title .subrayado-why {
+        position: absolute;
+        bottom: -4px;
+        height: 16px;
+        z-index: 1;
+        width: 100%;
+        background-color: #ffff01;
+        margin: auto; }
+    .why-carreras .why-carrera .text-why .reasons-item {
+      display: flex;
+      flex-wrap: wrap; }
+      .why-carreras .why-carrera .text-why .reasons-item .reasons {
+        width: 400px;
+        padding: 0px 20px;
+        margin-bottom: 40px; }
+        .why-carreras .why-carrera .text-why .reasons-item .reasons h4 {
+          font-weight: 600;
+          color: #000000DE;
+          border-left: 3px solid black;
+          padding: 0px 0px 0px 10px; }
 
 .our-careers {
   grid-column: 1/17;
-  margin-top: 50px;
-}
-
-.our-careers .careers-wrapper:first-child {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.our-careers .careers-wrapper:last-child {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.careers-wrapper {
-  margin-bottom: 80px;
-  display: flex;
-  align-items: center;
-}
-
-.our-careers .icon {
-  margin: 0px auto;
-  transition: 0.5s;
-  object-fit: cover;
-}
-
-.our-careers .icon:hover {
-  transform: scale(1.2);
-}
-
-.careers {
-  width: 65%;
-  color: white;
-}
-
-.careers h2 {
-  font-size: 45px;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.career-wrapper {
-  display: flex;
-}
-
-.career-wrapper .career {
-  width: 50%;
-  margin-right: 25px;
-  padding: 10px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 44 50/var(--tw-bg-opacity));
-  box-shadow: 0px 2px 10px gray;
-  border-radius: 4px;
-}
-
-.career h2 {
-  font-size: 29px;
-  margin-bottom: 20px;
-}
+  margin-top: 50px; }
+  .our-careers:first-child {
+    display: flex;
+    justify-content: flex-end; }
+  .our-careers:last-child {
+    display: flex;
+    justify-content: flex-end; }
+  .our-careers .careers-wrapper {
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center; }
+    .our-careers .careers-wrapper .icon {
+      margin: 0px auto;
+      transition: 0.5s;
+      object-fit: cover; }
+    .our-careers .careers-wrapper .careers {
+      width: 65%;
+      color: white; }
+      .our-careers .careers-wrapper .careers h2 {
+        font-size: 45px;
+        color: white;
+        margin-bottom: 30px; }
+    .our-careers .careers-wrapper .career-wrapper {
+      display: flex; }
+      .our-careers .careers-wrapper .career-wrapper .career {
+        width: 50%;
+        margin-right: 25px;
+        padding: 10px;
+        box-shadow: 0px 2px 10px gray;
+        border-radius: 4px;
+        --tw-bg-opacity: 1;
+        background-color: #2B2C32; }
+        .our-careers .careers-wrapper .career-wrapper .career h2 {
+          font-size: 29px;
+          margin-bottom: 20px; }
 
 .modality .carreras-times {
   flex-direction: column;
-  padding: 0px 130px;
-}
+  padding: 0px 130px; }
+  .modality .carreras-times .modality-date {
+    display: flex;
+    justify-content: space-between; }
+    .modality .carreras-times .modality-date p {
+      margin: 0px;
+      font-size: 20px;
+      font-weight: 100;
+      text-align: left; }
+    .modality .carreras-times .modality-date .date {
+      position: relative; }
+    .modality .carreras-times .modality-date .highlight {
+      position: absolute;
+      height: 25px;
+      width: 180px;
+      background-color: yellow; }
+  .modality .carreras-times .separator {
+    height: 1px;
+    background-color: gray;
+    margin: 25px 0px; }
 
-.modality-date {
-  display: flex;
-  justify-content: space-between;
-}
-
-.modality-date p {
-  margin: 0px;
-  font-size: 20px;
-  font-weight: 100;
-  text-align: left;
-}
-
-.date {
-  position: relative;
-}
-
-.highlight {
-  position: absolute;
-  height: 25px;
-  width: 180px;
-  background-color: yellow;
-}
-
-.separator {
-  height: 1px;
-  background-color: gray;
-  margin: 25px 0px;
-}
-
-/* ---------------------------------------------------------------------------------------------------- */
-
-/* PAGE EMPRESAS */
-
-/* .message-companies{
-  min-height: 600px;
-  padding: 0px 20px;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 80px;
-} */
+@media screen and (max-width: 768px) {
+  .why-carreras .why-carrera {
+    flex-direction: column;
+    padding: 0;
+    height: auto; }
+    .why-carreras .why-carrera .image img {
+      width: 100%;
+      height: auto; }
+    .why-carreras .why-carrera .text-why {
+      margin: 0;
+      width: 100%;
+      text-align: left; }
+      .why-carreras .why-carrera .text-why .text-why-title {
+        width: 75%;
+        margin: 0px auto; }
+        .why-carreras .why-carrera .text-why .text-why-title h3 {
+          font-size: 35px; }
+        .why-carreras .why-carrera .text-why .text-why-title .subrayado-why {
+          top: 16px;
+          left: 0px; }
+  .our-careers {
+    padding: 0px 10px; }
+    .our-careers .careers-wrapper {
+      flex-direction: column;
+      margin-bottom: 20px; }
+      .our-careers .careers-wrapper .career-wrapper {
+        flex-direction: column; }
+        .our-careers .careers-wrapper .career-wrapper .career {
+          width: 100%;
+          margin: 0px 0px 30px; }
+      .our-careers .careers-wrapper .careers {
+        width: 100%;
+        margin-top: 25px; }
+  .modality h2 {
+    color: white; }
+  .modality .subrayado {
+    top: 24px;
+    height: 36px; }
+  .modality .carreras-times {
+    flex-direction: column;
+    padding: 0; }
+    .modality .carreras-times .modality-date {
+      flex-direction: column; }
+      .modality .carreras-times .modality-date p {
+        color: white;
+        font-size: 20px;
+        line-height: 25px; }
+      .modality .carreras-times .modality-date .date span {
+        color: black; }
+    .modality .carreras-times .separator {
+      height: 0; } }
 
 .title-empresas {
   grid-column: 2/16;
-
   color: white;
   text-align: center;
-  margin: 80px 0px;
-}
+  margin: 80px 0px; }
 
 .plans {
   grid-column: 2/16;
-
   display: flex;
   gap: 30px;
-  margin-bottom: 80px;
-}
-
-.plan {
-  padding: 15px;
-  width: 33%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 44 50/var(--tw-bg-opacity));
-  box-shadow: 0px 2px 10px gray;
-  border-radius: 4px;
-  color: white;
-}
-
-.plan h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-
-.plan ul {
-  list-style: none;
-  margin-top: 20px;
-}
-
-.plan p {
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-
-.list {
-  display: flex;
-  align-items: center;
-}
-
-.list img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-.benefit {
-  display: flex;
-  align-items: baseline;
-}
-
-.benefit img {
-  margin-right: 5px;
-  width: 15px;
-  height: 15px;
-}
-
-li {
-  font-size: 15px;
-  line-height: 30px;
-}
+  margin-bottom: 80px; }
+  .plans .plan {
+    padding: 15px;
+    width: 33%;
+    box-shadow: 0px 2px 10px gray;
+    border-radius: 4px;
+    color: white;
+    --tw-bg-opacity: 1;
+    background-color: #2B2C32; }
+    .plans .plan h2 {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    .plans .plan p {
+      font-size: 15px;
+      margin-bottom: 20px; }
+    .plans .plan ul {
+      list-style: none;
+      margin-top: 20px; }
+      .plans .plan ul .benefit {
+        display: flex;
+        align-items: baseline; }
+        .plans .plan ul .benefit img {
+          margin-right: 5px;
+          width: 15px;
+          height: 15px; }
+        .plans .plan ul .benefit li {
+          font-size: 15px;
+          line-height: 30px; }
+    .plans .plan .list {
+      display: flex;
+      align-items: center; }
+      .plans .plan .list img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px; }
+      .plans .plan .list h3 {
+        font-size: 20px; }
 
 .options {
   grid-column: 4/14;
   color: white;
   padding: 20px;
-  margin-bottom: 80px;
-}
+  margin-bottom: 80px; }
+  .options p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .options .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+    .options .option img {
+      margin-right: 10px;
+      width: 40px; }
+    .options .option p {
+      font-size: 20px;
+      margin-bottom: 0; }
 
-.options p {
-  font-size: 25px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.option img {
-  margin-right: 10px;
-  width: 40px;
-}
-
-.options .option p {
-  font-size: 20px;
-  margin-bottom: 0;
-}
-
-/* -------------------------------------------------------------------------------------- */
-
-/* PAGE PLAN DE PAGO */
+@media screen and (max-width: 768px) {
+  .title-empresas {
+    grid-column: 1/17;
+    margin: 0px 0px 50px; }
+  .plans {
+    flex-direction: column;
+    grid-column: 1/17;
+    margin-bottom: 50px; }
+    .plans .plan {
+      width: 100%; }
+  .options {
+    grid-column: 1/17;
+    padding: 0;
+    margin-bottom: 50px; } }
 
 .title-plan-de-pago {
   grid-column: 2/16;
-
   color: white;
   text-align: center;
-  margin: 80px 0px;
-}
+  margin: 80px 0px; }
 
-.price-plan-de-pago {
-  margin-bottom: 35px;
-}
-
-.price-plan-de-pago p {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.price-plan-de-pago span {
-  font-weight: 200;
-  font-size: 18px;
-}
-
-.plan-title {
+.plans .plan .plan-title {
   display: flex;
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
+  .plans .plan .plan-title img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px; }
+  .plans .plan .plan-title h2 {
+    margin-bottom: 0; }
 
-.plan-title img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-}
+.plans .plan .price-plan-de-pago {
+  margin-bottom: 35px; }
+  .plans .plan .price-plan-de-pago p {
+    font-weight: 600;
+    font-size: 20px; }
+    .plans .plan .price-plan-de-pago p span {
+      font-weight: 200;
+      font-size: 18px; }
 
-.plan-title h2 {
-  margin-bottom: 0;
-}
-
-.plan button {
+.plans .plan button {
   border: 1px solid yellow;
   background: transparent;
   color: yellow;
@@ -794,408 +756,58 @@ li {
   display: flex;
   margin-top: 60px;
   justify-content: center;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
-/* ---------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .title-plan-de-pago {
+    grid-column: 1/17;
+    margin: 0px 0px 50px; } }
 
-/* PAGE FAQS */
-
-.accordion{
+.accordion {
   grid-column: 3/15;
-  margin-bottom: 50px;
-}
-
-.accordion h1{
-  color: white;
-}
-
+  margin-bottom: 50px; }
+  .accordion h1 {
+    color: white; }
 
 .contact {
   grid-column: 3/15;
-  color: white;
-}
-
-.contact h2{
-  font-size: 35px;
-  font-family: 'PT Sans', sans-serif;
-}
-.contact input[type="submit"]{
-  border-radius: 5px;
-  text-decoration: none;
-  border: 1px solid yellow;
-  background-color: yellow;
-  color: black;
-  padding: 15px;
-  font-size: 20px;
-  display: flex;
-  width: 30%;
-  font-family: 'PT Sans', sans-serif;
-  justify-content: center;
-
-}
-
-
-/* /---------------------------------------------------------- */
-
-/* MOBILE PAGE HOME */
-
-@media screen and (max-width: 768px) {
-
-  
-
-  .container-content {
-    padding: 5px;
-  }
-
-  /* HEADER */
-
-  .navbar .container-fluid {
+  color: white; }
+  .contact h2 {
+    font-size: 35px;
+    font-family: "PT Sans", sans-serif; }
+  .contact input[type="submit"] {
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid yellow;
+    background-color: yellow;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
     display: flex;
-    align-items: baseline;
-    padding: 0;
-  }
+    width: 30%;
+    font-family: "PT Sans", sans-serif;
+    justify-content: center; }
 
-  .navbar-nav{
-    padding: 0px 17px;
-  }
-  .navbar-brand{
-    padding-left: 5px;
-  }
-  .navbar-nav .nav-item{
-    font-size: 22px;
-    margin-bottom: 4px;
-  }
-  
-  #navbarNav li {
-    margin-right: 0px;
-  }
-
-  #navbarNav a {
-    text-align: end;
-    padding: 0px;
-    margin: 0px;
-    font-weight: 600;
-  }
-
-  .navbar-collapse{
-    background-color: black;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .message {
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    margin-bottom: 65px;
-    min-height: 0px;
-    padding: 0px;
-  }
-
-  .title {
-    margin: 0;
-  }
-
-  h1 {
-    font-size: 35px;
-    color: yellow;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .message-title p {
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 20px;
-  }
-
-  .message-title p:last-child {
-    font-size: 14px;
-  }
-
-  .message a {
-    width: 50%;
-  }
-
-  .message img {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-  }
-
-  /* carousel */
-
-  .carousel {
-    grid-column: 1/17;
-    height: auto;
-    flex-direction: column;
-    margin-bottom: 65px;
-    background-image: url(https://assets.soyhenry.com/henry-landing/assets/shapes/shapesHowApply.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: -159px;
-  }
-
-  .carousel-text {
-    width: 100%;
-  }
-
-  .carousel-text h2 {
-    font-size: 15px;
-    text-align: left;
-  }
-
-  .carousel-text h3 {
-    font-size: 35px;
-  }
-
-  #carouselExampleIndicators {
-    width: 100%;
-    height: 275px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .carousel-item .item p {
-    font-size: 15px;
-  }
-
-  .person img {
-    width: 50px;
-    height: auto;
-    margin-right: 15px;
-  }
-
-  .slide .person p {
-    margin-bottom: 0px;
-    font-size: 17px;
-  }
-
-  /* why */
-
-  .why {
-    padding: 0;
-    margin-bottom: 20px;
-    height: auto;
-    flex-direction: column;
-  }
-
-  .img-why img {
-    width: 100%;
-    height: 250px;
-    border-radius: 0px;
-  }
-
-  .text-why {
-    text-align: center;
-  }
-
-  .text-why h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-
-  .subrayado-why {
-    top: 270px;
-    left: 70px;
-  }
-
-
-  /* Cards de carreras */
-
-  .wrapper-home-career {
-    grid-column: 1/17;
-    margin-bottom: 30px;
-  }
-
-  .wrapper-home-career h2 {
-    font-size: 35px;
-    text-align: left;
-  }
-
-  .home-career {
-    flex-direction: column;
-    padding: 0px 5px;
-  }
-
-  .home-career .career {
-    width: 100%;
-    height: 400px;
-    border-radius: 10px;
-  }
-
-  .career h2 {
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: yellow;
-    font-weight: 600;
-  }
-
-  .career ul {
-    min-height: 100px;
-  }
-
-  .career li {
-    line-height: 20px;
-  }
-
-  .time p {
-    font-size: 12px;
-    margin-bottom: 0px;
-  }
-
-  .line {
-    margin-bottom: 15px;
-  }
-
-  h2 {
-    grid-column: 1/17;
-    font-size: 35px;
-    text-align: center;
-  }
-
-
-  /* Modality */
-
-  .modality{
-    height: auto;
-    padding: 0px 10px;
-    background-position-x: 177px;
-    background-position-y: 181px;
-    background-repeat: repeat-y;
-    background-color: black;
-    color: white;
-    box-shadow: 0px 0px 0px;
-    margin-bottom: 10px;
-  }
-
-  .modality p {
-    font-size: 35px;
-    margin-bottom: 30px;
-    line-height: 35px;
-    color: black;
-  }
-
-  .modality .subrayado {
-    top: 130px;
-    right: 20px;
-    width: 330px;
-  }
-  .times .modality-time p{
-    line-height: 25px;
-    color: white;
-    font-size: 18px;
-  }
-
-  .modality .times {
-    flex-direction: column;
-  }
-
-  .modality-time {
-    width: 100%;
-  }
-
-
-  /* FOOTER */
-
-  footer {
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
+footer {
+  grid-column: 1/13;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  font-family: "PT Sans", sans-serif; }
   footer a {
-    padding: 0px;
-    font-size: 30px;
-  }
-
-  footer ul {
-    margin-bottom: 0px;
-    padding: 0px;
-  }
-
-
-/* ----------------------------------------------------------------------------------------------------- */
-   /* PAGE  CARRERAS */ 
-
-   .why-carrera{
-    flex-direction: column;
-    padding: 0;
-    height: auto;
-
-   }
-   .why-carrera img{
-    width: 100%;
-    height: auto;
-   }
-
-   .why-carreras .text-why{
-    margin: 0;
-    width: 100%;
-    text-align: left;
-   }
-
-   .text-why-title{
-    width: 75%;
-    margin: 0px auto;
-  }
-
-  .text-why h3{
+    padding: 20px;
+    color: white;
     font-size: 35px;
-  }
-  .subrayado-why{
-    top: 16px;
-    left: 0px;
-  }
-  .our-careers{
-    padding: 0px 10px;
-  }
-  .careers-wrapper{
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-  .career-wrapper{
-    flex-direction: column;
-  }
-  .careers{
-    width: 100%;
-    margin-top: 25px;
-  }
-  .career-wrapper .career{
-    width: 100%;
-    margin: 0px 0px 30px;
-  }
-
- 
-  .modality h2{
-    color: white;
-  }
- 
-  .modality .subrayado{
-    top: 24px;
-    height: 36px;
-  }
-
-  .modality .carreras-times{
-    flex-direction: column;
-    padding: 0;
-    
-  }
-  .modality-date{
-    flex-direction: column;
-    
-  }
-  .modality-date .date span{
-    color: black;
-  }
-  .modality-date p{
-    color: white;
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .separator{
-    height: 0;
-  }
-}
-
+    text-decoration: none;
+    font-family: "Titan One", cursive; }
+  footer ul {
+    list-style: none;
+    font-family: Roboto;
+    text-align: center;
+    display: flex; }
+    footer ul li {
+      font-size: 25px;
+      margin-right: 20px; }
+  footer img {
+    width: 30px;
+    height: 30px; }
