@@ -548,19 +548,26 @@ body {
         font-size: 45px;
         color: white;
         margin-bottom: 30px; }
-    .our-careers .careers-wrapper .career-wrapper {
-      display: flex; }
-      .our-careers .careers-wrapper .career-wrapper .career {
-        width: 50%;
-        margin-right: 25px;
-        padding: 10px;
-        box-shadow: 0px 2px 10px gray;
-        border-radius: 4px;
-        --tw-bg-opacity: 1;
-        background-color: #2B2C32; }
-        .our-careers .careers-wrapper .career-wrapper .career h2 {
-          font-size: 29px;
-          margin-bottom: 20px; }
+      .our-careers .careers-wrapper .careers .career-wrapper {
+        display: flex; }
+        .our-careers .careers-wrapper .careers .career-wrapper .career {
+          width: 50%;
+          margin-right: 25px;
+          padding: 10px;
+          box-shadow: 0px 2px 10px gray;
+          border-radius: 4px;
+          --tw-bg-opacity: 1;
+          background-color: #2B2C32; }
+          .our-careers .careers-wrapper .careers .career-wrapper .career h2 {
+            font-size: 29px;
+            margin-bottom: 20px; }
+          .our-careers .careers-wrapper .careers .career-wrapper .career .time {
+            display: flex;
+            align-items: center; }
+            .our-careers .careers-wrapper .careers .career-wrapper .career .time img {
+              margin-right: 10px; }
+            .our-careers .careers-wrapper .careers .career-wrapper .career .time p {
+              margin-bottom: 0; }
 
 .modality .carreras-times {
   flex-direction: column;
@@ -610,14 +617,19 @@ body {
     .our-careers .careers-wrapper {
       flex-direction: column;
       margin-bottom: 20px; }
-      .our-careers .careers-wrapper .career-wrapper {
-        flex-direction: column; }
-        .our-careers .careers-wrapper .career-wrapper .career {
-          width: 100%;
-          margin: 0px 0px 30px; }
       .our-careers .careers-wrapper .careers {
         width: 100%;
         margin-top: 25px; }
+        .our-careers .careers-wrapper .careers .career-wrapper {
+          flex-direction: column; }
+          .our-careers .careers-wrapper .careers .career-wrapper .career {
+            width: 100%;
+            margin: 0px 0px 30px; }
+            .our-careers .careers-wrapper .careers .career-wrapper .career .time {
+              display: flex;
+              align-items: center; }
+              .our-careers .careers-wrapper .careers .career-wrapper .career .time p {
+                margin: 0; }
   .modality h2 {
     color: white; }
   .modality .subrayado {
