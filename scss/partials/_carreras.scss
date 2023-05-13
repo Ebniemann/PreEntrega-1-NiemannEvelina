@@ -174,12 +174,19 @@
 
 @media screen and (max-width: 768px) {
 
+
   .why-carreras{
+
+    &:last-child{
+      flex-direction: column-reverse;
+    }
 
     .why-carrera{
       flex-direction: column;
       padding: 0;
       height: auto;
+
+
 
       .image{
         img{
