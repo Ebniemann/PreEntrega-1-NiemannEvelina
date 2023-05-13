@@ -177,16 +177,14 @@
 
   .why-carreras{
 
-    &:last-child{
-      flex-direction: column-reverse;
-    }
-
     .why-carrera{
       flex-direction: column;
       padding: 0;
       height: auto;
 
-
+      &:last-child{
+        flex-direction: column-reverse;
+      }
 
       .image{
         img{
