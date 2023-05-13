@@ -1,0 +1,10 @@
+a{
+  text-decoration: none;
+  font-family: $font-sans;
+  background-color: map-get($map: $color, $key: amarillo);
+  border: 1px solid map-get($map: $color, $key: amarillo);
+  color: rgb(46, 46, 46);
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
