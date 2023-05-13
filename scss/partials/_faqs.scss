@@ -15,18 +15,4 @@
     font-size: 35px;
     font-family: $font-sans;
   }
-
-  input[type="submit"] {
-    border-radius: 5px;
-    text-decoration: none;
-    border: 1px solid yellow;
-    background-color: yellow;
-    color: black;
-    padding: 15px;
-    font-size: 20px;
-    display: flex;
-    width: 30%;
-    font-family: $font-sans;
-    justify-content: center;
-  }
 }

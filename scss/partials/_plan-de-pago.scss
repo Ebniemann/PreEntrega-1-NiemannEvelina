@@ -6,7 +6,8 @@
 }
 
 .plans {
-  .plan {
+  .plan-extend {
+    @extend .plan;
     .plan-title {
       display: flex;
       margin-bottom: 15px;
@@ -57,6 +58,6 @@
 @media screen and (max-width: 768px) {
   .title-plan-de-pago{
     grid-column: 1/17;
-    margin: 0px 0px 50px;
+    margin: 0px 0px;
   }
 }

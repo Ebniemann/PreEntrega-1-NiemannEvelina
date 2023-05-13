@@ -5,6 +5,25 @@
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  background-color: yellow;
+  border: 1px solid yellow;
+  color: #2e2e2e;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none; }
+
+input[type="submit"] {
+  text-decoration: none;
+  background-color: yellow;
+  border: 1px solid yellow;
+  color: #2e2e2e;
+  border-radius: 8px;
+  width: 30%;
+  font-family: "PT Sans", sans-serif; }
+
 .navbar {
   padding: 0;
   font-family: "PT Sans", sans-serif; }
@@ -15,6 +34,8 @@
     height: 100px;
     background-color: black; }
     .navbar .container-fluid .navbar-brand {
+      background-color: black;
+      border-color: black;
       padding: 20px;
       color: white;
       font-size: 35px;
@@ -70,16 +91,10 @@ body {
               font-size: 18px;
               margin-bottom: 100px; }
           body main .container-content .message .title a {
-            border-radius: 5px;
-            text-decoration: none;
-            border: 1px solid yellow;
-            background-color: yellow;
-            color: black;
             padding: 15px;
             font-size: 20px;
             display: flex;
             width: 30%;
-            font-family: "PT Sans", sans-serif;
             justify-content: center; }
         body main .container-content .message img {
           width: 600px;
@@ -257,17 +272,7 @@ body {
               font-size: 35px;
               font-weight: 600; }
             body main .container-content .wrapper-home-career .home-career .career .price a {
-              text-decoration: none;
-              font-family: "PT Sans", sans-serif;
-              padding: 10px;
-              background-color: yellow;
-              border-color: yellow;
-              color: #2e2e2e;
-              border-radius: 8px;
-              border-style: solid;
-              border-width: 2px;
-              cursor: pointer;
-              outline: none; }
+              padding: 10px; }
       body main .container-content .modality {
         grid-column: 1/17;
         position: relative;
@@ -329,16 +334,9 @@ body {
           font-family: "PT Sans", sans-serif;
           color: white; }
         body main .container-content .contact input[type="submit"] {
-          border-radius: 5px;
-          text-decoration: none;
-          border: 1px solid yellow;
-          background-color: yellow;
-          color: black;
           padding: 15px;
           font-size: 20px;
           display: flex;
-          width: 30%;
-          font-family: "PT Sans", sans-serif;
           justify-content: center; }
       @media screen and (max-width: 768px) {
         body main .container-content .container-content {
@@ -658,9 +656,10 @@ body {
 .plans {
   grid-column: 2/16;
   display: flex;
-  gap: 30px;
+  gap: 50px;
   margin-bottom: 80px; }
-  .plans .plan {
+  .plans .plan, .plans .plan-extend {
+    transition: transform 3s;
     padding: 15px;
     width: 33%;
     box-shadow: 0px 2px 10px gray;
@@ -668,33 +667,35 @@ body {
     color: white;
     --tw-bg-opacity: 1;
     background-color: #2B2C32; }
-    .plans .plan h2 {
+    .plans .plan:hover, .plans .plan-extend:hover {
+      transform: scale(1.1); }
+    .plans .plan h2, .plans .plan-extend h2 {
       font-size: 30px;
       margin-bottom: 20px; }
-    .plans .plan p {
+    .plans .plan p, .plans .plan-extend p {
       font-size: 15px;
       margin-bottom: 20px; }
-    .plans .plan ul {
+    .plans .plan ul, .plans .plan-extend ul {
       list-style: none;
       margin-top: 20px; }
-      .plans .plan ul .benefit {
+      .plans .plan ul .benefit, .plans .plan-extend ul .benefit {
         display: flex;
         align-items: baseline; }
-        .plans .plan ul .benefit img {
+        .plans .plan ul .benefit img, .plans .plan-extend ul .benefit img {
           margin-right: 5px;
           width: 15px;
           height: 15px; }
-        .plans .plan ul .benefit li {
+        .plans .plan ul .benefit li, .plans .plan-extend ul .benefit li {
           font-size: 15px;
           line-height: 30px; }
-    .plans .plan .list {
+    .plans .plan .list, .plans .plan-extend .list {
       display: flex;
       align-items: center; }
-      .plans .plan .list img {
+      .plans .plan .list img, .plans .plan-extend .list img {
         width: 20px;
         height: 20px;
         margin-right: 5px; }
-      .plans .plan .list h3 {
+      .plans .plan .list h3, .plans .plan-extend .list h3 {
         font-size: 20px; }
 
 .options {
@@ -725,7 +726,7 @@ body {
     flex-direction: column;
     grid-column: 1/17;
     margin-bottom: 50px; }
-    .plans .plan {
+    .plans .plan, .plans .plan-extend {
       width: 100%; }
   .options {
     grid-column: 1/17;
@@ -738,26 +739,26 @@ body {
   text-align: center;
   margin: 80px 0px; }
 
-.plans .plan .plan-title {
+.plans .plan-extend .plan-title {
   display: flex;
   margin-bottom: 15px; }
-  .plans .plan .plan-title img {
+  .plans .plan-extend .plan-title img {
     width: 30px;
     height: 30px;
     margin-right: 15px; }
-  .plans .plan .plan-title h2 {
+  .plans .plan-extend .plan-title h2 {
     margin-bottom: 0; }
 
-.plans .plan .price-plan-de-pago {
+.plans .plan-extend .price-plan-de-pago {
   margin-bottom: 35px; }
-  .plans .plan .price-plan-de-pago p {
+  .plans .plan-extend .price-plan-de-pago p {
     font-weight: 600;
     font-size: 20px; }
-    .plans .plan .price-plan-de-pago p span {
+    .plans .plan-extend .price-plan-de-pago p span {
       font-weight: 200;
       font-size: 18px; }
 
-.plans .plan button {
+.plans .plan-extend button {
   border: 1px solid yellow;
   background: transparent;
   color: yellow;
@@ -773,7 +774,7 @@ body {
 @media screen and (max-width: 768px) {
   .title-plan-de-pago {
     grid-column: 1/17;
-    margin: 0px 0px 50px; } }
+    margin: 0px 0px; } }
 
 .accordion {
   grid-column: 3/15;
@@ -787,18 +788,6 @@ body {
   .contact h2 {
     font-size: 35px;
     font-family: "PT Sans", sans-serif; }
-  .contact input[type="submit"] {
-    border-radius: 5px;
-    text-decoration: none;
-    border: 1px solid yellow;
-    background-color: yellow;
-    color: black;
-    padding: 15px;
-    font-size: 20px;
-    display: flex;
-    width: 30%;
-    font-family: "PT Sans", sans-serif;
-    justify-content: center; }
 
 footer {
   grid-column: 1/13;
@@ -807,6 +796,8 @@ footer {
   justify-content: space-evenly;
   font-family: "PT Sans", sans-serif; }
   footer a {
+    background-color: black;
+    border-color: black;
     padding: 20px;
     color: white;
     font-size: 35px;
