@@ -54,13 +54,23 @@ input[type="submit"] {
             .navbar .container-fluid #navbarNav ul li a:active {
               color: yellow; }
     @media screen and (max-width: 768px) {
-      .navbar .container-fluid #navbarNav ul li {
-        margin-right: 0px; }
-        .navbar .container-fluid #navbarNav ul li a {
-          text-align: end;
-          padding: 0px;
-          margin: 0px;
-          font-weight: 600; } }
+      .navbar .container-fluid #navbarNav {
+        direction: rtl;
+        z-index: 2;
+        border-radius: 8px; }
+        .navbar .container-fluid #navbarNav ul {
+          box-shadow: 0px 2px 10px gray;
+          width: 60%;
+          background-color: white;
+          border-radius: 5px; }
+          .navbar .container-fluid #navbarNav ul li {
+            margin-right: 0px; }
+            .navbar .container-fluid #navbarNav ul li a {
+              padding: 0px;
+              margin: 0px 5px 10px 0px;
+              font-size: 20px;
+              color: black;
+              font-weight: 600; } }
 
 body {
   font-family: Roboto;
