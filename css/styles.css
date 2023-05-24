@@ -158,16 +158,19 @@ body {
             border-radius: 10px; }
             body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item {
               padding: 25px 20px 5px; }
+              body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item p {
+                height: 85px; }
               body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person {
                 display: flex;
                 align-items: center; }
                 body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person img {
-                  width: 65px;
-                  height: 65px;
+                  width: 115px;
+                  height: 115px;
                   margin-right: 25px; }
                 body main .container-content .carousel #carouselExampleIndicators .carousel-inner .item .person p {
                   color: black;
-                  font-weight: 100; }
+                  font-weight: 100;
+                  height: 0; }
             body main .container-content .carousel #carouselExampleIndicators .carousel-inner .slide p:first-child {
               min-height: 135px;
               font-size: 18px;

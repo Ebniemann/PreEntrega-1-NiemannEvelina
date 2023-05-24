@@ -122,19 +122,24 @@ body {
             .item {
               padding: 25px 20px 5px;
 
+              p{
+                height: 85px;
+              }
+
               .person {
                 display: flex;
                 align-items: center;
 
                 img {
-                  width: 65px;
-                  height: 65px;
+                  width: 115px;
+                  height: 115px;
                   margin-right: 25px;
                 }
 
                 p {
                   color: black;
                   font-weight: 100;
+                  height: 0;
                 }
               }
 
