@@ -829,3 +829,21 @@ footer {
   footer img {
     width: 30px;
     height: 30px; }
+
+.error .image img {
+  width: 100%;
+  height: 85vh; }
+
+.error .text {
+  display: flex;
+  justify-content: center; }
+  .error .text p {
+    color: white;
+    font-size: 40px;
+    margin-right: 15px; }
+  .error .text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    font-size: 19px; }
