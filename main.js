@@ -4,17 +4,17 @@ let totalCompra = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
   const hoy = new Date();
-  alert("Bienvenidos a E-task" + hoy.toLocaleString());
+  alert("Bienvenidos a E-task \n" + hoy.toLocaleString());
 
   let inicio = true;
 
   while (inicio) {
     let mensaje = "Seleccione la tarea que desea ejecutar:";
     mensaje += "\n 1- Comprar un curso";
-    mensaje += "\n 2- Ver carrito";
+    mensaje += "\n 2- Realizar pago";
     mensaje += "\n 3- Eliminar un curso seleccionado";
-    mensaje += "\n 4-Tengo suerte?";
-    mensaje += "\n 5-Salir";
+    mensaje += "\n 4- Tengo suerte?";
+    mensaje += "\n 5- Salir";
 
     let resp = prompt(mensaje);
     switch (resp) {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         inicio = false;
         break;
       default:
-        alert("No ingreso una opcion valida");
+        alert("No ingreso una opción valida");
     }
   }
 });
@@ -111,7 +111,7 @@ function verCarrito() {
 function mostrarCarrito() {
   let mensaje = "Tu compra es: \n";
   totalCarrito.forEach((c) => {
-    mensaje += c.id + " " + c.nombre + "\n";
+    mensaje += c.id + "- " + c.nombre + "\n";
   });
   mensaje += "total: " + totalCompra;
 
@@ -129,7 +129,7 @@ function mostrarCarrito() {
 function eliminarCurso() {
   let mensaje = "Tu carrito:\n";
   totalCarrito.forEach((curso, index) => {
-    mensaje += index + curso.nombre + "\n";
+    mensaje += index + "- " + curso.nombre + "\n";
   });
 
   let indexEliminar = prompt(
@@ -160,7 +160,7 @@ function obtenerPrecio(cursoId) {
 }
 
 function descuento() {
-  let suerte = confirm("quieres probrar suerte?");
+  let suerte = confirm("Quieres probrar suerte?");
   if (suerte) {
     let random = Math.round(Math.random() * 10);
     if (random >= 5) {
