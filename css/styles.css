@@ -721,13 +721,15 @@ footer {
     font-size: 19px; }
 
 .validar {
-  display: grid;
-  grid-column: 3/15;
+  grid-column: 7/12;
   border-radius: 5px;
-  background-color: white;
+  background-color: #F4FF7F;
   height: auto; }
   .validar ul {
-    color: black; }
+    color: #1A1A1A;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px; }
 
 i {
   cursor: pointer; }
@@ -752,3 +754,16 @@ i {
         font-size: 15px; }
   i:hover > .buy-car {
     display: block; }
+
+.check {
+  grid-column: 7/12;
+  border-radius: 5px;
+  background-color: #F4FF7F;
+  height: auto;
+  color: #1A1A1A;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .check p {
+    margin: 10px; }

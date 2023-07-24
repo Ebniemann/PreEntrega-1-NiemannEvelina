@@ -1,7 +1,7 @@
 class Usuario {
-  constructor(name, email, textArea) {
+  constructor(name, email, consulta) {
     this.name = name;
     this.email = email;
-    this.textArea = textArea;
+    this.consulta = consulta;
   }
 }

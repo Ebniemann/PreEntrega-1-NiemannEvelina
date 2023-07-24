@@ -5,11 +5,8 @@ let check = document.getElementById("checked");
 
 let btn_form = document.getElementById("btn-form");
 btn_form.addEventListener("click", () => {
-  console.log("cick");
-
   validarForm();
 });
-
 function validarForm() {
   validar.innerHTML = "";
   check.innerHTML = "";
@@ -38,12 +35,11 @@ function validarForm() {
     });
     validar.appendChild(lista);
   } else {
-    let checked = document.createElement("p");
-    checked.textContent = "Su consulta fue enviada con éxito";
+    let enviar = document.createElement("p");
+    enviar.textContent = "Su consulta fue enviada con éxito";
 
-    check.appendChild(checked);
+    check.appendChild(enviar);
   }
-
   return mensaje.length == 0;
 }
 
