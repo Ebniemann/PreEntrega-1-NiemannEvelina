@@ -15,7 +15,7 @@ a {
   cursor: pointer;
   outline: none; }
 
-input[type="submit"] {
+button[type="button"] {
   text-decoration: none;
   background-color: yellow;
   border: 1px solid yellow;
@@ -341,12 +341,12 @@ body {
       body main .container-content .contact {
         grid-column: 3/15;
         padding-top: 15px;
-        margin-bottom: 100px; }
+        margin-bottom: 50px; }
         body main .container-content .contact h2 {
           font-size: 35px;
           font-family: "PT Sans", sans-serif;
           color: white; }
-        body main .container-content .contact input[type="submit"] {
+        body main .container-content .contact button[type="button"] {
           padding: 15px;
           font-size: 20px;
           display: flex;
@@ -487,9 +487,7 @@ body {
               body main .container-content .modality .times .modality-time p {
                 line-height: 25px;
                 color: white;
-                font-size: 18px; }
-        body main .container-content .contact input[type="submit"] {
-          width: 45%; } }
+                font-size: 18px; } }
 
 .why-carreras {
   grid-column: 1/17; }
@@ -662,135 +660,6 @@ body {
     .modality .carreras-times .separator {
       height: 0; } }
 
-.title-empresas {
-  grid-column: 2/16;
-  color: white;
-  text-align: center;
-  margin: 80px 0px; }
-
-.plans {
-  grid-column: 2/16;
-  display: flex;
-  gap: 50px;
-  margin-bottom: 80px; }
-  .plans .plan, .plans .plan-extend {
-    transition: transform 3s;
-    padding: 15px;
-    width: 33%;
-    box-shadow: 0px 2px 10px gray;
-    border-radius: 4px;
-    color: white;
-    --tw-bg-opacity: 1;
-    background-color: #2B2C32; }
-    .plans .plan:hover, .plans .plan-extend:hover {
-      transform: scale(1.1); }
-    .plans .plan h2, .plans .plan-extend h2 {
-      font-size: 30px;
-      margin-bottom: 20px; }
-    .plans .plan p, .plans .plan-extend p {
-      font-size: 15px;
-      margin-bottom: 20px; }
-    .plans .plan ul, .plans .plan-extend ul {
-      list-style: none;
-      margin-top: 20px; }
-      .plans .plan ul .benefit, .plans .plan-extend ul .benefit {
-        display: flex;
-        align-items: baseline; }
-        .plans .plan ul .benefit img, .plans .plan-extend ul .benefit img {
-          margin-right: 5px;
-          width: 15px;
-          height: 15px; }
-        .plans .plan ul .benefit li, .plans .plan-extend ul .benefit li {
-          font-size: 15px;
-          line-height: 30px; }
-    .plans .plan .list, .plans .plan-extend .list {
-      display: flex;
-      align-items: center; }
-      .plans .plan .list img, .plans .plan-extend .list img {
-        width: 20px;
-        height: 20px;
-        margin-right: 5px; }
-      .plans .plan .list h3, .plans .plan-extend .list h3 {
-        font-size: 20px; }
-
-.options {
-  grid-column: 4/14;
-  color: white;
-  padding: 20px;
-  margin-bottom: 80px; }
-  .options p {
-    font-size: 25px;
-    margin-bottom: 20px;
-    text-align: center; }
-  .options .option {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; }
-    .options .option img {
-      margin-right: 10px;
-      width: 40px; }
-    .options .option p {
-      font-size: 20px;
-      margin-bottom: 0; }
-
-@media screen and (max-width: 768px) {
-  .title-empresas {
-    grid-column: 1/17;
-    margin: 0px 0px 50px; }
-  .plans {
-    flex-direction: column;
-    grid-column: 1/17;
-    margin-bottom: 50px; }
-    .plans .plan, .plans .plan-extend {
-      width: 100%; }
-  .options {
-    grid-column: 1/17;
-    padding: 0;
-    margin-bottom: 50px; } }
-
-.title-plan-de-pago {
-  grid-column: 2/16;
-  color: white;
-  text-align: center;
-  margin: 80px 0px; }
-
-.plans .plan-extend .plan-title {
-  display: flex;
-  margin-bottom: 15px; }
-  .plans .plan-extend .plan-title img {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px; }
-  .plans .plan-extend .plan-title h2 {
-    margin-bottom: 0; }
-
-.plans .plan-extend .price-plan-de-pago {
-  margin-bottom: 35px; }
-  .plans .plan-extend .price-plan-de-pago p {
-    font-weight: 600;
-    font-size: 20px; }
-    .plans .plan-extend .price-plan-de-pago p span {
-      font-weight: 200;
-      font-size: 18px; }
-
-.plans .plan-extend button {
-  border: 1px solid yellow;
-  background: transparent;
-  color: yellow;
-  padding: 20px 5px;
-  border-radius: 10px;
-  width: 85%;
-  margin: 0px auto;
-  display: flex;
-  margin-top: 60px;
-  justify-content: center;
-  font-size: 15px; }
-
-@media screen and (max-width: 768px) {
-  .title-plan-de-pago {
-    grid-column: 1/17;
-    margin: 0px 0px; } }
-
 .accordion {
   grid-column: 3/15;
   margin-bottom: 50px; }
@@ -803,6 +672,9 @@ body {
   .contact h2 {
     font-size: 35px;
     font-family: "PT Sans", sans-serif; }
+
+.modalContact {
+  grid-column: 3/15; }
 
 footer {
   grid-column: 1/13;
@@ -847,3 +719,36 @@ footer {
     align-items: center;
     width: 150px;
     font-size: 19px; }
+
+.validar {
+  display: grid;
+  grid-column: 3/15;
+  border-radius: 5px;
+  background-color: white;
+  height: auto; }
+  .validar ul {
+    color: black; }
+
+i {
+  cursor: pointer; }
+  i .buy-car {
+    display: none;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 5px 0 0 5px;
+    color: black;
+    font-size: 30px;
+    font-family: 'circular'; }
+    i .buy-car ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px; }
+      i .buy-car ul li {
+        list-style: none;
+        font-size: 15px; }
+  i:hover > .buy-car {
+    display: block; }

@@ -1,4 +1,4 @@
-input[type="submit"] {
+button[type="button"] {
   text-decoration: none;
   background-color: map-get($map: $color, $key: amarillo);
   border: 1px solid map-get($map: $color, $key: amarillo);

@@ -398,7 +398,7 @@ body {
       .contact {
         grid-column: 3/15;
         padding-top: 15px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         
         h2 {
           font-size: 35px;
@@ -406,7 +406,7 @@ body {
           color: white;
         }
       
-        input[type="submit"] { 
+        button[type="button"] { 
           padding: 15px;
           font-size: 20px;
           display: flex;
@@ -636,11 +636,6 @@ body {
                 font-size: 18px;
               }
             }
-          }
-        }
-        .contact{
-          input[type="submit"] {
-            width: 45%;
           }
         }
       }

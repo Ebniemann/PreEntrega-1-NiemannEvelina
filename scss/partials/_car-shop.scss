@@ -1,0 +1,35 @@
+i {
+  cursor: pointer;
+
+  .buy-car {
+    display: none;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 5px 0 0 5px;
+    color: black;
+    font-size: 30px;
+    font-family: 'circular';
+  
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      li {
+        list-style: none;
+        font-size: 15px;
+    
+      }
+    }
+  }
+
+  &:hover > .buy-car{
+    display: block;
+  }
+}
+
+
+  
