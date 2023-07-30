@@ -1,7 +1,7 @@
 let carrito = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  let btn_buy = document.querySelectorAll(".buy");
+  let btn_buy = document.querySelectorAll(".button");
 
   btn_buy.forEach((boton, index) => {
     boton.addEventListener("click", (e) => {
