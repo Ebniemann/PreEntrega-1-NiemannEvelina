@@ -11,3 +11,21 @@
 @import 'partials/validar';
 @import 'partials/car-shop';
 @import 'partials/check';
+
+
+
+  
+    .general-cart{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+  
+    }
+  
+    .total{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+
+    

@@ -117,6 +117,10 @@
             font-size: 29px;
             margin-bottom: 20px;
           }
+          ul{
+            height: 120px;
+            margin-bottom: 0;
+          }
           .time{
             display: flex;
             align-items: center;
@@ -126,6 +130,17 @@
             p{
               margin-bottom: 0;
             }
+          }
+          .price{
+            span{
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+
+          button{
+            padding: 7px;
+            width: 35%;
           }
         }
       }

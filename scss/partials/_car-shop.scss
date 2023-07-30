@@ -1,7 +1,17 @@
 i {
   cursor: pointer;
+  position: relative;
 
-  .buy-car {
+  span{
+    position: absolute;
+    font-size: 15px;
+    color: yellow;
+    bottom: 12px;
+    right: -10px;
+  }
+
+  .cart {
+    overflow: scroll;
     display: none;
     width: 400px;
     height: 400px;
@@ -11,22 +21,17 @@ i {
     background-color: #ffff;
     border-radius: 5px 0 0 5px;
     color: black;
-    font-size: 30px;
     font-family: 'circular';
   
-    ul {
+    buy-cart{
       display: flex;
       justify-content: space-between;
-      margin-top: 15px;
-      li {
-        list-style: none;
-        font-size: 15px;
-    
-      }
+      font-size: 25px;
     }
+    
   }
 
-  &:hover > .buy-car{
+  &:hover > .cart{
     display: block;
   }
 }

@@ -1,4 +1,4 @@
-button[type="button"] {
+.buy {
   text-decoration: none;
   background-color: map-get($map: $color, $key: amarillo);
   border: 1px solid map-get($map: $color, $key: amarillo);
@@ -6,4 +6,10 @@ button[type="button"] {
   border-radius: 8px;
   width: 30%;
   font-family: $font-sans;
+}
+
+
+
+.btnEliminar{
+  background-color: white;
 }
