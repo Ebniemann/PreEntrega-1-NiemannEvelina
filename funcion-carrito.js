@@ -37,7 +37,7 @@ curso = [
   },
 ];
 
-function addCarrito(item) {
+function agregarAlCarrito(item) {
   let productoExiste = carrito.some((prod) => prod.id === item.id);
 
   if (productoExiste) {
@@ -89,7 +89,7 @@ function eliminarProducto(item) {
 function actualizarCarrito() {
   actualizarContador();
   mostrarCarrito();
-  //guardarCarrito();
+  guardarCarrito();
 }
 
 function actualizarContador() {
@@ -157,4 +157,9 @@ function mostrarCarrito() {
   total.textContent += `Total: $${totalCarrito}`;
 
   detalle.appendChild(total);
+}
+
+function guardarCarrito() {
+  const carritoJSON = JSON.stringify(carrito);
+  localStorage.setItem(key_localstorage_carrito, carritoJSON);
 }
