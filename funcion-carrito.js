@@ -66,7 +66,7 @@ function agregarAlCarrito(item) {
 
 function eliminarProducto(item) {
   Swal.fire({
-    title: "Desea eliminar el producto?",
+    title: "Desea eliminar el curso?",
     showCancelButton: true,
     cancelButtonColor: "#d33",
     confirmButtonText: "Elimninar",
@@ -137,7 +137,7 @@ function mostrarCarrito() {
     //eliminarBtn.classList.add("btnEliminar");
     eliminarBtn.innerHTML = `
                           <a">
-                          <img src="/img/icons/trash3.svg"></img>
+                          <img src="/img/trash3.svg"></img>
                           </a>
                           `;
 
