@@ -137,7 +137,7 @@ function mostrarCarrito() {
     eliminarBtn.classList.add("btnEliminar");
     eliminarBtn.innerHTML = `
                           
-                          <p>-</p>
+                          <p>🗑️</p>
                           
                           `;
 
