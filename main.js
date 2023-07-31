@@ -5,7 +5,7 @@ const key_localstorage_carrito = "carrito";
 document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem(key_localstorage_carrito)) || [];
 
-  const btn_buy = document.querySelectorAll(".button");
+  const btn_buy = document.querySelectorAll(".btnDelete");
   btn_buy.forEach((boton, index) => {
     const btnIndex = index;
     boton.addEventListener("click", (e) => {
