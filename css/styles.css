@@ -794,7 +794,7 @@ i {
   display: flex;
   justify-content: flex-end; }
 
-.btnDelete {
+.buttonAdd {
   text-decoration: none;
   background-color: yellow;
   border: 1px solid yellow;
@@ -802,3 +802,8 @@ i {
   border-radius: 8px;
   width: 30%;
   font-family: "PT Sans", sans-serif; }
+
+.btnEliminar {
+  text-decoration: none;
+  background-color: white;
+  border: white; }

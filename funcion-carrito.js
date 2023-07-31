@@ -134,11 +134,11 @@ function mostrarCarrito() {
     let eliminar = document.createElement("div");
 
     let eliminarBtn = document.createElement("a");
-    //eliminarBtn.classList.add("btnEliminar");
+    eliminarBtn.classList.add("btnEliminar");
     eliminarBtn.innerHTML = `
-                          <a">
-                          <img src="/img/trash3.svg"></img>
-                          </a>
+                          
+                          <img src="/img/eliminar.svg"></img>
+                          
                           `;
 
     eliminarBtn.addEventListener("click", () => {
