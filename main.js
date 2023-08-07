@@ -1,6 +1,6 @@
 let carrito = [];
 
-const key_localstorage_carrito = "carrito";
+const key_localstorage_carrito = "EVELINA_NIEMANN_CARRITO";
 
 document.addEventListener("DOMContentLoaded", () => {
   carrito = JSON.parse(localStorage.getItem(key_localstorage_carrito)) || [];
