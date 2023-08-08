@@ -539,80 +539,29 @@ body {
 
 .our-careers {
   grid-column: 1/17;
-  margin-top: 50px; }
-  .our-careers:first-child {
+  margin: 50px 50px 50px 0px; }
+  .our-careers .careers {
     display: flex;
-    justify-content: flex-end; }
-  .our-careers:last-child {
-    display: flex;
-    justify-content: flex-end; }
-  .our-careers .careers-wrapper {
-    margin-bottom: 80px;
-    display: flex;
-    align-items: center; }
-    .our-careers .careers-wrapper .icon {
-      margin: 0px auto;
-      transition: 0.5s;
-      object-fit: cover; }
-    .our-careers .careers-wrapper .careers {
-      width: 65%;
-      color: white; }
-      .our-careers .careers-wrapper .careers h2 {
-        font-size: 45px;
-        color: white;
-        margin-bottom: 30px; }
-      .our-careers .careers-wrapper .careers .career-wrapper {
-        display: flex; }
-        .our-careers .careers-wrapper .careers .career-wrapper .career {
-          width: 50%;
-          margin-right: 25px;
-          padding: 10px;
-          box-shadow: 0px 2px 10px gray;
-          border-radius: 4px;
-          --tw-bg-opacity: 1;
-          background-color: #2B2C32; }
-          .our-careers .careers-wrapper .careers .career-wrapper .career h2 {
-            font-size: 29px;
-            margin-bottom: 20px; }
-          .our-careers .careers-wrapper .careers .career-wrapper .career ul {
-            height: 120px;
-            margin-bottom: 0; }
-          .our-careers .careers-wrapper .careers .career-wrapper .career .time {
-            display: flex;
-            align-items: center; }
-            .our-careers .careers-wrapper .careers .career-wrapper .career .time img {
-              margin-right: 10px; }
-            .our-careers .careers-wrapper .careers .career-wrapper .career .time p {
-              margin-bottom: 0; }
-          .our-careers .careers-wrapper .careers .career-wrapper .career .price span {
-            font-size: 20px;
-            font-weight: bold; }
-          .our-careers .careers-wrapper .careers .career-wrapper .career button {
-            padding: 7px;
-            width: 35%; }
-
-.modality .carreras-times {
-  flex-direction: column;
-  padding: 0px 130px; }
-  .modality .carreras-times .modality-date {
-    display: flex;
-    justify-content: space-between; }
-    .modality .carreras-times .modality-date p {
-      margin: 0px;
-      font-size: 20px;
-      font-weight: 100;
-      text-align: left; }
-    .modality .carreras-times .modality-date .date {
-      position: relative; }
-    .modality .carreras-times .modality-date .highlight {
-      position: absolute;
-      height: 25px;
-      width: 180px;
-      background-color: yellow; }
-  .modality .carreras-times .separator {
-    height: 1px;
-    background-color: gray;
-    margin: 25px 0px; }
+    justify-content: space-around;
+    width: 100%;
+    color: white; }
+    .our-careers .careers .box-cart {
+      box-shadow: 0px 2px 10px gray;
+      padding: 10px;
+      min-width: 301px; }
+    .our-careers .careers h3 {
+      font-size: 25px;
+      color: white;
+      margin-bottom: 30px; }
+    .our-careers .careers ul {
+      height: 120px;
+      margin-bottom: 0; }
+    .our-careers .careers .precio {
+      font-size: 25px;
+      font-weight: bold; }
+    .our-careers .careers a {
+      color: black;
+      padding: 5px; }
 
 @media screen and (max-width: 768px) {
   .why-carreras .why-carrera {

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Cursos online en vivo de Programación Web, Diseño UX/UI y Producto. Estudiá en E-task y aprendé con profesores expertos!">
+  <meta name="keywords" content="programacion, ux/ui, product, desarrollo web, carreras, carreras online">
+  <meta name="author" content="evelina niemann">
+  <meta property="og:title" content="E-task | Aprende Haciendo">
+  <meta property="og:description" content="Una plataforma de aprendizaje donde puedes desarrollar tus habilidades y adaptarte al futuro profesional.">
+  <meta property="og:image" content="img/logo.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dca07a3b9e.js" crossorigin="anonymous"></script>
+  <title>Carreras</title>
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">E-task</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="carreras.html">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
+            </li>
+          </ul>
+          <i id= "shopp-cart"class="fa-solid fa-cart-shopping" style="color: #ffffff;">
+            <span id="compra">0</span>
+            <div class="cart">
+              <div class="buy-cart" id="buy-cart">
+              </div>    
+            </div>
+          </i>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-content">
+      <section class="message">
+        <div class="title">
+          <h1>Únete a nuestra comunidad y reescribe tu futuro</h1>
+          <p>Vas a aprender cómo conectar tu aprendizaje con proyectos reales para que puedas comenzar a
+            tener impacto en un trabajo desde el primer día.
+          </p>
+          <a href="#our-career">Ver carreras</a>
+        </div>
+        <div class="img-inicio">
+          <img src="../img/img/carrera-home.png" alt="Mujer con una notebook">
+        </div>
+      </section>
+
+      <section class="why-carreras">
+        <section class="why-carrera">
+          <div class="image">
+            <img src="../img/img/home-dos.jpg" alt="Dos mujeres con una notebook">
+          </div>
+          <div class="text-why">
+            <div class="text-why-title">
+              <h3>¿Part-Time?</h3>
+              <div class="subrayado-why"></div>
+            </div>
+            <div class="reasons-item">
+              <div class="reasons">
+                <h4>Estudia y trabaja</h4>
+                <p>Si ya tienes un empleo y puedes demostrarlo, nuestra carrera Part-Time es para ti. Te permite
+                  estudiar programación y convertirte en desarrollador Full Stack mientras trabajas.</p>
+              </div>
+              <div class="reasons">
+                <h4>Currícula</h4>
+                <p>Diseñado junto a empresas, nuestro programa está basado en proyectos reales y te permite aprender las
+                  habilidades más demandadas del mercado.</p>
+              </div>
+              <div class="reasons">
+                <h4>Online y remoto</h4>
+                <p>Nuestra carrera es 100% online y en vivo y te prepara para trabajar desde donde quieras.</p>
+              </div>
+              <div class="reasons">
+                <h4>Job Prep</h4>
+                <p>Con nuestro módulo de Job Preparation te brindamos las herramientas que necesitas para insertarte en
+                  la industria tech.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="why-carrera">
+          <div class="text-why">
+            <div class="text-why-title">
+              <h3> ¿Full-Time? </h3>
+              <div class="subrayado-why"></div>
+            </div>
+            <h2>La carrera Full Stack Web Developer te abre un mundo de posibilidades</h2>
+            <div class="reasons-item">
+              <div class="reasons">
+                <h4>Full Stack Developer</h4>
+              </div>
+              <div class="reasons">
+                <h4>Front End Developer</h4>
+              </div>
+              <div class="reasons">
+                <h4>Web Developer</h4>
+              </div>
+              <div class="reasons">
+                <h4>Software Developer</h4>
+              </div>
+              <div class="reasons">
+                <h4>Back End Developer</h4>
+              </div>
+              <div class="reasons">
+                <h4>Mobile Developer</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="image">
+            <img src="../img/img/full-time.png" alt="Hombre con una notebook">
+          </div>
+        </section>
+      </section>
+
+      <section class="our-careers" id="our-career">
+
+        <div class="careers-wrapper">
+          <img class="icon" src="../img/icons/producto.svg" alt="Imagen de producto" height='170px' data-aos="zoom-in">
+          <div class="careers">
+
+            <h2>PRODUCTO</h2>
+
+            <div class="career-wrapper">
+
+              <div class="career" id="product-card">
+                <h2>Product Web</h2>
+
+                <h3>Incluye 3 cursos</h3>
+
+                <ul>
+                  <li>Product Manager</li>
+                  <li>Diseño UX/UI</li>
+                  <li>Desarrollo Web</li>
+                </ul>
+
+                <div class="time">
+                  <img src="../img/icons/clock.png" alt="reloj" width="14px" height="14px">
+                  <p>31 semanas / 2 clases semanales de 2 hs</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="price">
+                  <p>Hasta 12 cuotas sin interés de  <span>$ 2.000 ARS</span></p>
+                </div>
+                <button type= "button" class="buttonAdd">Agregar al carrito</button>
+              </div>
+
+              <div class="career" id="product-card">
+                <h2>Product</h2>
+
+                <h3>Incluye 2 cursos</h3>
+
+                <ul>
+                  <li>Product Manager</li>
+                  <li>E-commerce</li>
+                </ul>
+
+                <div class="time">
+                  <img src="../img/icons/clock.png" alt="reloj" width="14px" height="14px">
+                  <p>16 semanas / 2 clases semanales de 2 hs</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="price">
+                  <p>Hasta 12 cuotas sin interés de  <span>$1.000 ARS</span></p>
+                </div>
+                <button type= "button" class="buttonAdd">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="careers-wrapper">
+          <img class="icon" src="../img/icons/desarrollo.svg" alt="Imagen de programacion" height='170px' data-aos="zoom-in">
+          <div class="careers">
+            <h2>PROGRAMACIÓN</h2>
+            <div class="career-wrapper">
+
+              <div class="career" id="product-card" >
+                <h2>Desarrollo de aplicaciones</h2>
+
+                <h3>Incluye 4 cursos</h3>
+
+                <ul>
+                  <li>Desarrollo Web</li>
+                  <li>JavaScript</li>
+                  <li>React Js</li>
+                  <li>Desarrollo de Aplicaciones</li>
+                </ul>
+
+                <div class="time">
+                  <img src="../img/icons/clock.png" alt="reloj" width="14px" height="14px">
+                  <p>35 semanas / 2 clases semanales de 2 hs</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="price">
+                  <p>Hasta 12 cuotas sin interés de <span>$ 3.000 ARS</span></p>
+                </div>
+                <button type= "button" class="buttonAdd">Agregar al carrito</button>
+
+              </div>
+
+              <div class="career" id="product-card">
+                <h2>Desarrollo Full Stack</h2>
+
+                <h3>Incluye 4 cursos</h3>
+
+                <ul>
+                  <li>Desarrollo Web</li>
+                  <li>JavaScript</li>
+                  <li>React Js</li>
+                  <li>Programación Backend</li>
+                </ul>
+
+                <div class="time">
+                  <img src="../img/icons/clock.png" alt="reloj" width="14px" height="14px">
+                  <p>50 semanas / 2 clases semanales de 2 hs</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="price">
+                  <p>Hasta 12 cuotas sin interés de <span>$ 4.000 ARS</span></p>
+                </div>
+                <button type= "button" class="buttonAdd">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="careers-wrapper">
+          <img class="icon" src="../img/icons/ux-ui.svg" alt="Imagen de UX/UI" height='170px' data-aos="zoom-in">
+          <div class="careers">
+
+            <h2>UX/UI</h2>
+
+            <div class="career-wrapper">
+              <div class="career" id="product-card">
+                <h2>Desarrollo UX/UI</h2>
+
+                <h3>Incluye 4 cursos</h3>
+
+                <ul>
+                  <li>Photoshop e Illustrator</li>
+                  <li>Diseño UX/UI</li>
+                  <li>Diseño UX/UI Avanzado</li>
+                  <li>Desarrollo Web</li>
+                </ul>
+
+                <div class="time">
+                  <img src="../img/icons/clock.png" alt="reloj" width="14px" height="14px">
+                  <p>40 semanas / 2 clases semanales de 2 hs</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="price">
+                  <p>Hasta 12 cuotas sin interés de <span>$ 5.000 ARS</span></p>
+                </div>
+                <button type= "button" class="buttonAdd">Agregar al carrito</button>
+              </div>
+
+              <div class="career" id="product-card">
+                <h2>Product Design</h2>
+
+                <h3>Incluye 4 cursos</h3>
+
+                <ul>
+                  <li>Product Manager</li>
+                  <li>Prototipado (Figma y Adobe XD)</li>
+                  <li>Diseño UX/UI</li>
+                  <li>UI</li>
+                </ul>
+
+                <div class="time">
+                  <img src="../img/icons/clock.png" alt="reloj" width="14px" height="14px">
+                  <p>37 semanas / 2 clases semanales de 2 hs</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="price">
+                  <p>Hasta 12 cuotas sin interés de <span>$ 6.000 ARS</span></p>
+                </div>
+                <button type= "button" class="buttonAdd">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="modality">
+        <h2>CUANDO EMPEZAR</h2>
+        <p data-aos="fade-up" data-aos-duration="5000">Próximas fechas</p>
+        <div class="subrayado"></div>
+        <div class="carreras-times">
+          <div class="modality-date">
+            <p class="date">
+              <span>01 de Mayo, 2023 </span>
+              <br>
+              01/05 al 02/12
+            </p class="date">
+            <div class="highlight"></div>
+            <p class="duration">
+              <u>Duración</u>
+              <br>
+              8 meses
+              <br>
+              Part-time
+            </p>
+            <p class="format">
+              <u>Formato</u>
+              <br>
+              Online
+            </p>
+            <p class="schedule">
+              <u>Horario</u>
+              <br>
+              Lunes a Viernes
+              <br>
+              7pm a 10pm
+              <br>
+              Sábado
+              <br>
+              10am a 1pm
+            </p>
+          </div>
+          <div class="separator"></div>
+          <div class="modality-date">
+            <p class="date">
+              <span>29 de Mayo, 2023</span>
+              <br>
+              29/05 al 30/12
+            </p>
+            <div class="highlight"></div>
+            <p class="duration">
+              <u>Duración</u>
+              <br>
+              8 meses
+              <br>
+              Part-time
+            </p>
+            <p class="format">
+              <u> Formato</u>
+              <br>
+              Online
+            </p>
+            <p class="schedule">
+              <u>Horario</u>
+              <br>
+              Lunes a Viernes
+              <br>
+              9pm a 0pm
+              <br>
+              Sábado
+              <br>
+              6am a 9pm
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <a href="../index.html">E-task</a>
+    <nav>
+      <ul>
+        <li><img src="../img/icons/facebook.png" alt="facebook"></li>
+        <li><img src="../img/icons/instagram.png" alt="instagram"></li>
+        <li><img src="../img/icons/linkedin.png" alt="linkedin"></li>
+      </ul>
+    </nav>
+  </footer>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+{
+  id: 2,
+  nombre: "Product",
+  precio: 12000,
+  cantidad: 1,
+},
+{
+  id: 3,
+  nombre: "Desarrollo de aplicaciones",
+  precio: 14000,
+  cantidad: 1,
+},
+{
+  id: 4,
+  nombre: "Desarrollo Full Stack",
+  precio: 16000,
+  cantidad: 1,
+},
+{
+  id: 5,
+  nombre: "Desarrollo UX/UI",
+  precio: 18000,
+  cantidad: 1,
+},
+{
+  id: 6,
+  nombre: "Product Design",
+  precio: 20000,
+  cantidad: 1,
+},
+
+
+
+
+
+let carrito = [];
+
+const key_localstorage_carrito = "EVELINA_NIEMANN_CARRITO";
+
+document.addEventListener("DOMContentLoaded", () => {
+  carrito = JSON.parse(localStorage.getItem(key_localstorage_carrito)) || [];
+
+  const btn_buy = document.querySelectorAll(".buttonAdd");
+  btn_buy.forEach((boton, index) => {
+    const btnIndex = index;
+    boton.addEventListener("click", (e) => {
+      //const index = Array.from(btn_buy).indexOf(boton);
+      const producto = curso[btnIndex];
+      agregarAlCarrito(producto);
+    });
+  });
+  actualizarCarrito();
+});
