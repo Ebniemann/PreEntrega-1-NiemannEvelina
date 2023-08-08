@@ -150,6 +150,7 @@ class Compra {
     this.guardarCarrito();
   }
 
+  //Visualizo la cantidad de cursos en el carrito
   actualizarContador() {
     let total = carrito.reduce(
       (acumulador, carrito) => acumulador + carrito.cantidad,
@@ -188,6 +189,7 @@ class Compra {
       identificador.textContent = nombre;
 
       let valor = document.createElement("p");
+      valor.classList.add("cart-precio");
       valor.textContent = precio;
 
       let eliminarBtn = document.createElement("a");
@@ -209,6 +211,7 @@ class Compra {
     });
 
     let total = document.createElement("p");
+    total.classList.add("total");
     total.textContent += `Total: $${totalCarrito}`;
 
     detalle.appendChild(total);

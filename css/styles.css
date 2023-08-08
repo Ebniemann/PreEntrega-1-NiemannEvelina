@@ -706,7 +706,7 @@ i {
     overflow: scroll;
     display: none;
     width: 400px;
-    height: 400px;
+    max-height: 260px;
     position: absolute;
     right: 0;
     padding: 10px;
@@ -721,6 +721,33 @@ i {
   i:hover > .cart {
     display: block; }
 
+.buy-cart .total {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px; }
+
+.buy-cart button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  background-color: yellow;
+  border: 1px solid yellow;
+  color: #2e2e2e;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  width: 100%; }
+
+.general-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; }
+  .general-cart h3 {
+    font-family: "PT Sans", sans-serif; }
+  .general-cart .cart-precio {
+    position: absolute;
+    left: 270px; }
+
 .check {
   grid-column: 7/12;
   border-radius: 5px;
@@ -731,7 +758,7 @@ i {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px; }
-  .check p {
+  .check .cart-precio {
     margin: 10px; }
 
 .general-cart {
