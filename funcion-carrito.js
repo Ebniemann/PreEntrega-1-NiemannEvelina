@@ -1,55 +1,13 @@
 class Compra {
   iniciarCompra() {
-    this.curso = [
-      {
-        id: 1,
-        nombre: "Product Web",
-        precio: 1000,
-        cantidad: 1,
-        cantidad_cursos: 3,
-        lista_cursos: ["Product Manager", "Diseño UX/UI", "Desarrollo Web"],
-        cantidad_semanas: 31,
-      },
-      {
-        id: 2,
-        nombre: "Product",
-        precio: 2000,
-        cantidad: 1,
-        cantidad_cursos: 2,
-        lista_cursos: ["Product Manager", "E-commerce"],
-        cantidad_semanas: 16,
-      },
-      {
-        id: 3,
-        nombre: "Desarrollo de aplicaciones",
-        precio: 3000,
-        cantidad: 1,
-        cantidad_cursos: 4,
-        lista_cursos: [
-          "Desarrollo Web",
-          "JavaScript",
-          "React Js",
-          "Desarrollo de Aplicaciones",
-        ],
-        cantidad_semanas: 35,
-      },
-      {
-        id: 4,
-        nombre: "Desarrollo Full Stack",
-        precio: 4000,
-        cantidad: 1,
-        cantidad_cursos: 4,
-        lista_cursos: [
-          "Desarrollo Web",
-          "JavaScript",
-          "React Js",
-          "Programación Backend",
-        ],
-        cantidad_semanas: 50,
-      },
-    ];
+    const url = "/data.json";
+    fetch(url)
+      .then((respuesta) => respuesta.json())
+      .then((resultado) => {
+        this.curso = resultado.curso;
 
-    this.cargarCurso();
+        this.cargarCurso();
+      });
   }
 
   //Funcion que crea las card de los cursos.
@@ -58,6 +16,7 @@ class Compra {
     cardNueva.innerHTML = "";
 
     this.curso.forEach((cursoCard) => {
+      console.log(cursoCard.lista_cursos);
       const {
         nombre,
         precio,
