@@ -761,15 +761,6 @@ i {
   .check .cart-precio {
     margin: 10px; }
 
-.general-cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline; }
-
-.total {
-  display: flex;
-  justify-content: flex-end; }
-
 .buttonAdd {
   text-decoration: none;
   background-color: yellow;
