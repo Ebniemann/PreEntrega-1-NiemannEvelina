@@ -36,7 +36,13 @@ function validarForm() {
     let error_text = document.createElement("p");
     error_text.textContent = "Ingrese su consulta";
     textE.appendChild(error_text);
-  } else {
+  }
+  if (
+    input_nombre &&
+    input_email &&
+    input_textArea &&
+    validarEmail(input_email)
+  ) {
     Swal.fire({
       position: "center",
       icon: "success",
