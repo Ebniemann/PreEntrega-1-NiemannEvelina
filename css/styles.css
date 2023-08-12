@@ -544,7 +544,28 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    min-height: 350px;
     color: white; }
+    .our-careers .careers.loading {
+      pointer-events: none;
+      position: relative; }
+      .our-careers .careers.loading:before {
+        content: "";
+        font-size: 25px;
+        width: 100%;
+        height: 100%;
+        color: black;
+        background: white;
+        background-image: url("../img/historias-de-instagram.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
     .our-careers .careers .box-cart {
       box-shadow: 0px 2px 10px gray;
       padding: 10px;
@@ -562,6 +583,26 @@ body {
     .our-careers .careers a {
       color: black;
       padding: 5px; }
+      .our-careers .careers a.loading {
+        pointer-events: none;
+        position: relative; }
+        .our-careers .careers a.loading:before {
+          content: "";
+          font-size: 25px;
+          width: 100%;
+          height: 100%;
+          color: black;
+          background: white;
+          background-image: url("../img/historias-de-instagram.gif");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
 
 @media screen and (max-width: 768px) {
   .why-carreras .why-carrera {

@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   nueva_compra.actualizarCarrito();
 });
 
-function agregarCarrito(id) {
+function agregarCarrito(id, event) {
+  ELEMENT = event.target;
   const cursos = document.querySelector("#div_" + id);
 
   let nombre = cursos.querySelector("h3").textContent;

@@ -1,6 +1,9 @@
 class Compra {
   iniciarCompra() {
     const url = "/data.json";
+
+    ELEMENT = document.getElementById("careers");
+
     fetch(url)
       .then((respuesta) => respuesta.json())
       .then((resultado) => {
@@ -16,7 +19,6 @@ class Compra {
     cardNueva.innerHTML = "";
 
     this.curso.forEach((cursoCard) => {
-      console.log(cursoCard.lista_cursos);
       const {
         nombre,
         precio,
@@ -44,8 +46,8 @@ class Compra {
       let seleccionarCursoBtn = document.createElement("a");
       seleccionarCursoBtn.textContent = "Agregar al carrito";
 
-      seleccionarCursoBtn.addEventListener("click", () => {
-        agregarCarrito(id);
+      seleccionarCursoBtn.addEventListener("click", (event) => {
+        agregarCarrito(id, event);
       });
 
       card.appendChild(seleccionarCursoBtn);
@@ -55,28 +57,36 @@ class Compra {
 
   // Berifico si el curso no esta en el carrito y lo agrego.
   seleccionarCurso(item) {
+    fireAsyncAction({
+      action: "ADD_TO_CART",
+    });
+
     let productoExiste = carrito.some((prod) => prod.id === item.id);
 
     if (productoExiste) {
-      Toastify({
-        text: "Este curso ya esta en tu carrito",
-        duration: 2000,
-        gravity: "bottom",
-        style: {
-          background: "linear-gradient(to right, #EC3A3A, #FAAC58)",
-        },
-      }).showToast();
+      setTimeout(() => {
+        Toastify({
+          text: "Este curso ya esta en tu carrito",
+          duration: 3000,
+          gravity: "bottom",
+          style: {
+            background: "linear-gradient(to right, #EC3A3A, #FAAC58)",
+          },
+        }).showToast();
+      }, 1000);
     } else {
       carrito.push(item);
 
-      Toastify({
-        text: "Curso agregado con exito!",
-        duration: 2000,
-        gravity: "bottom",
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        },
-      }).showToast();
+      setTimeout(() => {
+        Toastify({
+          text: "Curso agregado con exito!",
+          duration: 3000,
+          gravity: "bottom",
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast();
+      }, 1000);
     }
     this.actualizarCarrito();
   }
@@ -153,11 +163,7 @@ class Compra {
 
       let eliminarBtn = document.createElement("a");
       eliminarBtn.classList.add("btnEliminar");
-      eliminarBtn.innerHTML = `
-                          
-                          <p>🗑️</p>
-                          
-                          `;
+      eliminarBtn.innerHTML = `<p>🗑️</p>`;
 
       eliminarBtn.addEventListener("click", () => {
         this.eliminarProducto(productCart);
