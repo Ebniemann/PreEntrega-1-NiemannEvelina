@@ -13,7 +13,7 @@ class Compra {
       });
   }
 
-  //Funcion que crea las card de los cursos.
+  //Funcion que carga los cursos
   cargarCurso() {
     let cardNueva = document.getElementById("careers");
     cardNueva.innerHTML = "";
@@ -55,7 +55,7 @@ class Compra {
     });
   }
 
-  // Berifico si el curso no esta en el carrito y lo agrego.
+  //Verifico si el curso no esta en el carrito y lo agrego
   seleccionarCurso(item) {
     fireAsyncAction({
       action: "ADD_TO_CART",
@@ -121,7 +121,7 @@ class Compra {
 
   //Visualizo la cantidad de cursos en el carrito
   actualizarContador() {
-    let total = carrito.reduce(
+    const total = carrito.reduce(
       (acumulador, carrito) => acumulador + carrito.cantidad,
       0
     );

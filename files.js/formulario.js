@@ -9,7 +9,7 @@ btn_form.addEventListener("click", () => {
   validarForm();
 });
 
-//valida que los campor del form este completos
+//valida que los campos del form
 function validarForm() {
   nameE.textContent = "";
   emailE.textContent = "";
@@ -21,20 +21,24 @@ function validarForm() {
   if (!input_nombre) {
     let error_name = document.createElement("p");
     error_name.innerHTML = "Ingrese su nombre";
+    error_name.style.color = "yellow";
     nameE.appendChild(error_name);
   }
   if (!input_email) {
     let error_email = document.createElement("p");
     error_email.textContent = "Ingrese su email";
+    error_email.style.color = "yellow";
     emailE.appendChild(error_email);
   } else if (!validarEmail(input_email)) {
     let validar_email = document.createElement("p");
     validar_email.textContent = "Ingrese un email válido";
+    validar_email.style.color = "yellow";
     emailE.appendChild(validar_email);
   }
   if (!input_textArea) {
     let error_text = document.createElement("p");
     error_text.textContent = "Ingrese su consulta";
+    error_text.style.color = "yellow";
     textE.appendChild(error_text);
   }
   if (

@@ -27,6 +27,7 @@ const actions = [
   },
 ];
 
+//Cambio el estilo del botón "Agregar al carrito"
 const fireAsyncAction = ({ timeOut = 1000, action }) => {
   if (ELEMENT) {
     ELEMENT.classList.add("loading");
